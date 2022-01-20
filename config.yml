@@ -1,0 +1,68 @@
+baseURL: 'https://swlacy.com'
+languageCode: en-us
+title: Sid's Blog
+theme: PaperMod
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+menu:
+    main:
+      - name: Home
+        url: /
+        weight: 1
+      - name: Documents
+        url: /docs
+        weight: 2
+      - name: Posts
+        url: /posts
+        weight: 3
+      - name: About
+        url: /about
+        weight: 4
+      - name: Archive
+        url: /archive
+        weight: 5
+      - name: Search
+        url: /search
+        weight: 6
+
+params:
+    env: production
+    defaultTheme: dark
+    ShowReadingTime: true
+    ShowCodeCopyButtons: true
+    ShowPostNavLinks: false
+    author: ["Sid Lacy"]
+
+    profileMode:
+        enabled: true
+        title: "Hi, my name is Sid."
+        subtitle: "I write about computer security."
+        imageUrl: "https://avatars.githubusercontent.com/u/77074184"
+        imageTitle: "Sid Lacy"
+        imageWidth: 196
+        imageHeight: 196
+        buttons:
+            - name: Documents
+              url: "/docs"
+            - name: Blog Posts
+              url: "/posts"
+
+    socialIcons:
+        - name: "github"
+          url: "https://github.com/lacysw"
+        - name: "linkedin"
+          url: "https://www.linkedin.com/in/lacysw/"
+        - name: "email"
+          url: "mailto:contact@swlacy.com?subject=Hello!"
+
+    cover:
+        linkFullImages: true
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON

@@ -1,0 +1,1 @@
+My personal blog, remade in Hugo for simplicity of future development.
