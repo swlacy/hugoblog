@@ -12,27 +12,24 @@ minify:
 
 menu:
     main:
-      - name: Home
-        url: /
-        weight: 1
-      - name: Documents
+      - name: Docs
         url: /documents
-        weight: 2
-      - name: Posts
+        weight: 1
+      - name: Blog
         url: /posts
-        weight: 3
+        weight: 2
       - name: Resume
         url: /resume.pdf
-        weight: 4
+        weight: 3
       - name: About
         url: /about
-        weight: 5
+        weight: 4
       - name: Archive
         url: /archive
-        weight: 6
+        weight: 5
       - name: Search
         url: /search
-        weight: 7
+        weight: 6
 
 params:
     env: production
@@ -68,12 +65,16 @@ params:
               url: "/documents/previse"
 
     socialIcons:
+        - name: "email"
+          url: "mailto:contact@swlacy.com?subject=Hello!"
         - name: "github"
           url: "https://github.com/lacysw"
         - name: "linkedin"
           url: "https://www.linkedin.com/in/lacysw/"
-        - name: "email"
-          url: "mailto:contact@swlacy.com?subject=Hello!"
+        - name: "hackthebox"
+          url: "https://app.hackthebox.com/profile/787255"
+        - name: "wwucyber"
+          url: "https://wwucyber.com"
 
     cover:
         linkFullImages: true
