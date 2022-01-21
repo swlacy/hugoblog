@@ -3,7 +3,7 @@
     --entry: #e0e1da;
     --primary: #262624;
     --secondary: #262624;
-    --tertiary: #bbbcd0;
+    --tertiary: #bebfb9;
     --content: #262624;
     --hljs-bg: #3b2d29;
     --code-bg: #e0e1da;
@@ -15,7 +15,7 @@
     --entry: #161922;
     --primary: #bbbcd0;
     --secondary: #ced0bb;
-    --tertiary: #262624;
+    --tertiary: #343742;
     --content: #bbbcd0;
     --hljs-bg: #262624;
     --code-bg: #161922;
@@ -33,5 +33,5 @@
 }
 
 .main {
-    padding-top: 64pt;
+    padding-top: 48pt;
 }

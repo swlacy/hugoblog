@@ -53,7 +53,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 12.67 seconds
 ```
 
-As it appears, Previse is listening on port 22 for incoming SSH connections and on port 80 for HTTP requests with an Apache server. Navigating to http://10.10.11.104 redirects to http://10.10.11.104/login.php; here's a screenshot of that page: ![Screenshot of http://10.10.11.104/login.php](/docs/previse1.png)
+As it appears, Previse is listening on port 22 for incoming SSH connections and on port 80 for HTTP requests with an Apache server. Navigating to http://10.10.11.104 redirects to http://10.10.11.104/login.php; here's a screenshot of that page: ![Screenshot of http://10.10.11.104/login.php](/documents/previse1.png)
 
 Good news — a login portal is likely something we can exploit. I tried a few common credential combinations, such as `admin:admin` and `user:password`, but was unable to log in. No matter, however, as the site still may hold useful resources not protected by a credential prompt. To determine whether this is the case, let's use Gobuster.
 
@@ -104,7 +104,7 @@ Unfortunately, the majority of pages found by Gobuster redirect back to login.ph
 
 ##  MITM Attack — Burp Suite
 ### Viewing Protected Pages
-If attempting to view specific pages leads to redirection back to login.php, perhaps some information may be gleaned from examining the redirect process. Burp Suite's Proxy tool can be used to intercept and modify HTTP requests and responses — a man-in-the-middle (MITM) attack. Browsing to the accounts.php page is one such URL redirected to login.php, as shown by Gobuster: `/accounts.php (Status: 302) [Size: 3994] [--> login.php]`. See below: upon capturing the HTTP traffic of navigation to accounts.php in Burp Suite, we can see that the response for the request `GET /accounts.php HTTP/1.1` is `HTTP/1.1 302 Found`, and not only that, the source of accounts.php has been captured as well. ![Screenshot of accounts.php intercept in Burp Suite](/docs/previse2.png)
+If attempting to view specific pages leads to redirection back to login.php, perhaps some information may be gleaned from examining the redirect process. Burp Suite's Proxy tool can be used to intercept and modify HTTP requests and responses — a man-in-the-middle (MITM) attack. Browsing to the accounts.php page is one such URL redirected to login.php, as shown by Gobuster: `/accounts.php (Status: 302) [Size: 3994] [--> login.php]`. See below: upon capturing the HTTP traffic of navigation to accounts.php in Burp Suite, we can see that the response for the request `GET /accounts.php HTTP/1.1` is `HTTP/1.1 302 Found`, and not only that, the source of accounts.php has been captured as well. ![Screenshot of accounts.php intercept in Burp Suite](/documents/previse2.png)
 
 Seeing the "ONLY ADMINS SHOULD BE ABLE TO ACCESS THIS PAGE!!" banner is a sure sign of progress. The captured source code, rendered above:
 ```html
@@ -222,9 +222,9 @@ The HTML above contains some interesting and relevant information:
 
 ### Generating a Privileged User
 
-Given that criteria, consider the credential set `username123:password123`. We can enter that information into the actual accounts.php page by injecting a false HTTP response code of 200 (OK) [using Burp Suite Proxy](https://onappsec.com/how-to-edit-response-in-burp-proxy/): ![Screenshot of accessing accounts.php via response code inject](/docs/previse3.png)
+Given that criteria, consider the credential set `username123:password123`. We can enter that information into the actual accounts.php page by injecting a false HTTP response code of 200 (OK) [using Burp Suite Proxy](https://onappsec.com/how-to-edit-response-in-burp-proxy/): ![Screenshot of accessing accounts.php via response code inject](/documents/previse3.png)
 
-Navigating to the login portal and submitting `username123:password123` now permits access to any previously restricted credential-pages, as can be seen below, given the example of files.php: ![Screenshot of accessing accounts.php via response code inject](/docs/previse4.png)
+Navigating to the login portal and submitting `username123:password123` now permits access to any previously restricted credential-pages, as can be seen below, given the example of files.php: ![Screenshot of accessing accounts.php via response code inject](/documents/previse4.png)
 
 ## Building Familiarity with Previse
 ### Exploring the Previse Site
@@ -323,7 +323,7 @@ If we craft a POST request such that the delimiter (`delim`) has an executable s
 ## Gaining Shell Access
 ### Writing a Malicious POST Request
 As previously mentioned, if we create a normal post request to file_logs.php as follows, we then only need to append a malicious custom `delim` parameter to the end — one step at a time though.
-Consider the following request, captured when submitting a request for log data from file_logs.php: ![Screenshot of obtaining a valid POST request to file_logs.php](/docs/previse5.png)
+Consider the following request, captured when submitting a request for log data from file_logs.php: ![Screenshot of obtaining a valid POST request to file_logs.php](/documents/previse5.png)
 
 At the bottom, `delim=comma` can be seen; this can be changed to `delim=comma; <statement>` to execute `<statement>` when the POST request is forwarded. Ideally, a reverse shell may be set up to grant shell access. This, of course, can be difficult to do without knowing what packages are installed on the target.
 
@@ -548,6 +548,6 @@ I hope you found this guide helpful or inspirational. Thank you so much for read
 
 https://www.hackthebox.com/achievement/machine/787255/373
 
-![https://www.hackthebox.com/achievement/machine/787255/373](/docs/previse6.png)
+![https://www.hackthebox.com/achievement/machine/787255/373](/documents/previse6.png)
 
 *Feedback? [I can be reached via email](mailto:contact@swlacy.com?subject=Previse%20Report).*

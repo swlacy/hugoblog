@@ -2,7 +2,7 @@ baseURL: 'https://swlacy.com'
 languageCode: en-us
 title: Sid's Blog
 theme: PaperMod
-paginate: 5
+paginate: 10
 
 minify:
   disableXML: true
@@ -51,7 +51,7 @@ params:
         enabled: true
         title: "Hi, my name is Sid."
         subtitle: "I write about computer security."
-        imageUrl: "https://avatars.githubusercontent.com/u/77074184"
+        imageUrl: "headshot.png"
         imageTitle: "Sid Lacy"
         imageWidth: 196
         imageHeight: 196
@@ -61,7 +61,7 @@ params:
             - name: Blog Posts
               url: "/posts"
             - name: "Featured: Fishing for Malware"
-              url: "/posts/fishing-for-malware"
+              url: "/posts/fishing-for-malware-1"
             - name: "Featured: HTB Previse Report"
               url: "/documents/previse"
 
