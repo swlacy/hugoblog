@@ -38,7 +38,7 @@ params:
     ShowReadingTime: true
     ShowBreadCrumbs: true
     ShowCodeCopyButtons: true
-    ShowPostNavLinks: false
+    ShowShareButtons: true
     author: ["Sid Lacy"]
 
     assets:
