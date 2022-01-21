@@ -86,12 +86,12 @@
 
         const copybutton = document.createElement('button');
         copybutton.classList.add('copy-code');
-        copybutton.innerText = '{{- i18n "code_copy" | default "copy" }}';
+        copybutton.innerText = '{{- i18n "code_copy" | default "Copy" }}';
 
         function copyingDone() {
-            copybutton.innerText = '{{- i18n "code_copied" | default "copied!" }}';
+            copybutton.innerText = '{{- i18n "code_copied" | default "Copied" }}';
             setTimeout(() => {
-                copybutton.innerText = '{{- i18n "code_copy" | default "copy" }}';
+                copybutton.innerText = '{{- i18n "code_copy" | default "Copy" }}';
             }, 2000);
         }
 
