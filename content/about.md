@@ -1,13 +1,14 @@
 ---
-title: About Me & My Goals for This Site
+title: About Me
 keywords: ['sid', 'lacy', 'about', 'blog', 'website', 'cybersecurity', 'security', 'computer', 'hackthebox', 'htb', 'tech']
 hide_table_of_contents: true
 cover:
     image: "craterLake.jpg"
-    alt: "Crater Lake, OR; captured by me in the summer of 2021."
-    caption: "Crater Lake, OR; captured by me in the summer of 2021."
+    alt: "Crater Lake, OR; captured by me in the summer of 2021"
+    caption: "Crater Lake, OR; captured by me in the summer of 2021"
     relative: false
 hideMeta: true
+ShowBreadCrumbs: false
 ---
 
 My name is Sid Lacy. I am a student at Western Washington University, double-majoring in cybersecurity and political science; I aspire to one day fill a role in my professional life that sees some intersection between the two. Currently, I also cohead and represent the [Western Washington University Cybersecurity Club](https://wwucyber.com) as a member of the Cybersecurity Department, working with my peers to spread awareness and discuss contemporary news related to cybersecurity, and to promote activity in security-related technical events.

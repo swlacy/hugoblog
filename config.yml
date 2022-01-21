@@ -1,7 +1,8 @@
-baseURL: 'https://swlacy.com'
+baseURL: 'https://new.swlacy.com'
 languageCode: en-us
 title: Sid's Blog
 theme: PaperMod
+paginate: 5
 
 minify:
   disableXML: true
@@ -13,28 +14,38 @@ menu:
         url: /
         weight: 1
       - name: Documents
-        url: /docs
+        url: /documents
         weight: 2
       - name: Posts
         url: /posts
         weight: 3
+      - name: Resume
+        url: /resume.pdf
+        weight: 4
       - name: About
         url: /about
-        weight: 4
+        weight: 5
       - name: Archive
         url: /archive
-        weight: 5
+        weight: 6
       - name: Search
         url: /search
-        weight: 6
+        weight: 7
 
 params:
     env: production
-    defaultTheme: dark
+    defaultTheme: light
     ShowReadingTime: true
+    ShowBreadCrumbs: true
     ShowCodeCopyButtons: true
     ShowPostNavLinks: false
     author: ["Sid Lacy"]
+
+    assets:
+        favicon: "favicon.ico"
+        favicon16x16: "favicon-16x16.png"
+        favicon32x32: "favicon-32x32.png"
+        apple_touch_icon: "apple-touch-icon.png"
 
     profileMode:
         enabled: true
@@ -46,9 +57,13 @@ params:
         imageHeight: 196
         buttons:
             - name: Documents
-              url: "/docs"
+              url: "/documents"
             - name: Blog Posts
               url: "/posts"
+            - name: "Featured: Fishing for Malware"
+              url: "/posts/fishing-for-malware"
+            - name: "Featured: HTB Previse Report"
+              url: "/documents/previse"
 
     socialIcons:
         - name: "github"

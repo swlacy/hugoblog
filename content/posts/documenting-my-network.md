@@ -21,7 +21,8 @@ Further, I have arguably managed to be rather frugal while building my network a
 
 ## Logical Topology: A Rough Draft
 
-![Network Diagram](/img/netdiag.png "A diagram of my home network")
+![Diagram of my home network](/netdiag.png)
+
 Using [Lucid](https://lucid.app), I created an illustration of the significant devices within my network and how they relate to one another. Of significant note: the majority of client devices and the model of my edge router have been excluded, as the clients on my network have no significance as they relate to the architecture of the network and I have no intention of broadcasting what router I use in case somehow a related CVE is discovered and exploited faster than I can patch it. I recognize that security by obscurity is, of course, not a viable strategy, but my point stands.
 
 In any case, what I have shown above highlights the important parts of my hardware. My Internet plan allows for maximum realistic throughout of 540/17 Mbps, and what I have installed provides for that without issue — all Ethernet cabling is a mixture of Cat 5E and Cat 6.

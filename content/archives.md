@@ -1,6 +1,5 @@
 ---
-title: "Website Archive"
+title: "Archive"
 layout: "archives"
 url: /archive
-summary: Website Archive
 ---

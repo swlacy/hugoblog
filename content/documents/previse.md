@@ -7,6 +7,13 @@ ShowReadingTime: true
 ShowBreadCrumbs: false
 ShowPostNavLinks: false
 summary: Comprehensive walkthrough of the retired Previse machine on HackTheBox
+date: 2021-12-23
+cover:
+    image: "/documents/previse6.png"
+    alt: "Proof of completion"
+    caption: "Proof of completion"
+ShowToc: true
+TocOpen: true
 ---
 
 Hello, and thank you for expressing interest in my report on [Previse](https://app.hackthebox.com/machines/Previse), a CTF hosted by Hack the Box. Previse was uploaded by HTB user [m4lwhere](https://app.hackthebox.com/users/107145) 138 days prior to the publication of this report and is currently considered by the HTB community to be easy to intermediate in terms of difficulty.
