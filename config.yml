@@ -4,6 +4,8 @@ title: Sid's Blog
 theme: PaperMod
 paginate: 10
 
+googleAnalytics: G-QFRYSRDLC1
+
 minify:
   disableXML: true
   minifyOutput: true
