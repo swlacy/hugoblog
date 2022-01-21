@@ -11,4 +11,5 @@ I would neither be able to create nor maintain this website without the hard wor
  - Image zoom: [medium-zoom](https://github.com/francoischalifour/medium-zoom)
  - Color scheme: [Rust language book](https://doc.rust-lang.org/book)
  - Syntax highlighting: [highlight.js — *espresso.min.js*](https://highlightjs.org/)
+ - SVG icons: [Font Awesome v5](https://fontawesome.com/)
  - Cover art: [Japanese prints from the MET website](https://www.metmuseum.org)
