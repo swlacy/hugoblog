@@ -364,7 +364,7 @@ The primary incentive behind gaining shell access was to connect to the SQL data
 $ mysql -u root -p
 Enter password: mySQL_p@ssw0rd!:)
 ```
-```sql
+```none
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 1434
 Server version: 5.7.35-0ubuntu0.18.04.1 (Ubuntu)
@@ -412,7 +412,7 @@ mysql>
 ### Finding and Cracking Password Hashes from the SQL Database
 
 It seems the credentials do work! That `accounts` table looks pretty interesting. Contents:
-```sql
+```none
 mysql> select * from accounts;
 select * from accounts;
 +----+---------------+------------------------------------+---------------------+

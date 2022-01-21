@@ -2,7 +2,7 @@
 <footer class="footer">
     <span>Copyright &copy; {{ now.Year }} Sid Lacy •
         Last Built {{ now.Format "06" }}.{{ now.Format "01" }}.{{ now.Format "02" }} UTC •
-        <a href="/attrib">Attribution</a>
+        <a href="/attribution">Attribution</a>
 
     </span>
 </footer>
@@ -128,3 +128,14 @@
     });
 </script>
 {{- end }}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.6/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+const images = Array.from(document.querySelectorAll(".post-content img"));
+images.forEach(img => {
+  mediumZoom(img, {
+    background: '#00000000'
+  });
+});
+</script>
