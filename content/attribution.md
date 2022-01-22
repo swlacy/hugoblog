@@ -2,6 +2,7 @@
 title: Attribution
 hideMeta: true
 ShowBreadCrumbs: false
+ShowShareButtons: false
 ---
 
 I would neither be able to create nor maintain this website without the hard work of others. The following list documents the significant frameworks, code, and ideas that I used while designing *swlacy.com*.
