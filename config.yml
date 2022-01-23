@@ -2,7 +2,8 @@ baseURL: 'https://swlacy.com'
 languageCode: en-us
 title: Sid's Blog
 theme: PaperMod
-paginate: 10
+paginate: 15
+enableRobotsTXT: true
 
 googleAnalytics: G-QFRYSRDLC1
 
@@ -32,6 +33,9 @@ menu:
         weight: 6
 
 params:
+    title: "Sid's Blog"
+    Description: "I write about computer security"
+    keywords: [Sid, Lacy, Blog, Security, Cybersecurity, Computer, HackTheBox, Project, Career, Resume, GitHub, LinkedIn, Site]
     env: production
     defaultTheme: light
     ShowReadingTime: true
@@ -39,6 +43,9 @@ params:
     ShowCodeCopyButtons: true
     ShowShareButtons: true
     author: ["Sid Lacy"]
+
+    label:
+        icon: apple-touch-icon.png
 
     assets:
         favicon: "favicon.ico"
@@ -78,6 +85,15 @@ params:
 
     cover:
         linkFullImages: true
+
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
 
 outputs:
     home:
