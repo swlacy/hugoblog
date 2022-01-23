@@ -41,3 +41,8 @@ path {
 .main {
     padding-top: 48pt;
 }
+
+code {
+    font-family:'Fira Code', monospace;
+    font-weight: 400;
+}
