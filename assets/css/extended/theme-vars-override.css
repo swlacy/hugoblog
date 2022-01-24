@@ -48,13 +48,16 @@ nav {
 
 code {
     font-family:'Fira Mono', monospace;
-    font-weight: 400;
 }
 
 .post-content code {
+    font-family:'Fira Mono', monospace;
     font-size: 14px;
-    line-height: 1.6;
-    box-sizing: content-box;
+    line-height: 1.5;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 300;
+
 }
 
 body {
