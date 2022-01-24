@@ -9,6 +9,10 @@
     --code-bg: #e0e1da;
     --border: #3b2d29;
     --headercolor: #e0e1dac4;
+    --radius: 4px;
+    --main-width: 960px;
+    --footer-height: 18px;
+    --header-height: 40px;
 }
 
 .dark {
@@ -28,7 +32,7 @@ path {
     fill: var(--primary);
 }
 
-.nav {
+nav {
     z-index: 2 !important;
     position: fixed;
     background: var(--headercolor);
@@ -45,4 +49,16 @@ path {
 code {
     font-family:'Fira Mono', monospace;
     font-weight: 400;
+}
+
+.post-content code {
+    font-size: 14px;
+    line-height: 1.6;
+    box-sizing: content-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
 }
