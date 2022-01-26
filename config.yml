@@ -62,13 +62,9 @@ params:
         imageWidth: 196
         imageHeight: 196
         buttons:
-            - name: Documents
-              url: "/documents"
-            - name: Blog Posts
-              url: "/posts"
-            - name: "Featured: Fishing for Malware"
+            - name: "Fishing for Malware Series"
               url: "/posts/fishing-for-malware-1"
-            - name: "Featured: HTB Previse Report"
+            - name: "HackTheBox: Previse Report"
               url: "/documents/previse"
 
     socialIcons:

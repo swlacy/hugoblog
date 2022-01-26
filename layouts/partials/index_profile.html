@@ -1,0 +1,37 @@
+<div class="profile">
+    {{- with .Site.Params.profileMode }}
+    <div class="profile_inner">
+        {{- if .imageUrl -}}
+        <img src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}"
+            height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+        {{- end }}
+        <h1>{{ .title | default $.Site.Title | markdownify }}</h1>
+        <span>{{ .subtitle | markdownify }}</span>
+        {{- partial "social_icons.html" $.Site.Params.socialIcons -}}
+
+        {{- with .buttons }}
+        
+        <a class="button" href="/documents" rel="noopener" title="Documents">
+            <span class="button-inner">Documents</span>
+        </a>
+        &nbsp|
+        <a class="button" href="/posts" rel="noopener" title="Blog Posts">
+            <span class="button-inner">Blog Posts</span>
+        </a>
+
+        <br>
+        <br>
+        <br>
+
+        <center><b><i>Featured Articles</i></b></center>
+        <div class="buttons" style="border-top: double var(--primary)">
+            {{- range . }}
+            <a class="button" href="{{ trim .url " " }}" rel="noopener" title="{{ .name | title }}">
+                <span class="button-inner">{{ .name | title }}</span>
+            </a>
+            {{- end }}
+        </div>
+        {{- end }}
+    </div>
+    {{- end}}
+</div>
