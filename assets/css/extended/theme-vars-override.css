@@ -46,6 +46,10 @@ nav {
     padding-top: 48pt;
 }
 
+.profile_inner {
+    max-width: 330px;
+}
+
 code {
     font-family:'Fira Mono', monospace;
 }
