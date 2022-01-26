@@ -1,4 +1,6 @@
-My personal blog, remade in Hugo for simplicity of future development.  
+
+
+My personal blog, hosted at [swlacy.com](https://swlacy.com), remade in Hugo for simplicity of future development.  
 Built with Hugo. Uses PaperMod, installed as a git submodule.
 
 ```
