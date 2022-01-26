@@ -24,7 +24,7 @@
         <br>
 
         <center><b><i>Featured Articles</i></b></center>
-        <div class="buttons" style="border-top: double var(--primary)">
+        <div class="buttons" style="border-top: thin dotted var(--primary)" margin=30px>
             {{- range . }}
             <a class="button" href="{{ trim .url " " }}" rel="noopener" title="{{ .name | title }}">
                 <span class="button-inner">{{ .name | title }}</span>
