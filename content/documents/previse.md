@@ -10,8 +10,6 @@ summary: Comprehensive walkthrough of the retired Previse machine on HackTheBox
 date: 2021-12-23
 cover:
     image: "/documents/previseCard.png"
-    alt: "Proof of completion"
-    caption: "Proof of completion"
 ShowToc: true
 TocOpen: true
 ---
