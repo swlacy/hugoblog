@@ -42,7 +42,9 @@ nav {
     min-width: 100%;
 }
 
-
+main.main {
+    padding-top: 48px;
+}
 
 .profile_inner {
     max-width: 330px;
