@@ -11,23 +11,22 @@
 
         {{- with .buttons }}
         
-        <a class="button" href="/documents" rel="noopener" title="Documents">
+        <a class="button" href="/documents" rel="noopener" title="Documents" style="border: thin solid var(--primary)">
             <span class="button-inner">Documents</span>
         </a>
-        &nbsp|
-        <a class="button" href="/posts" rel="noopener" title="Blog Posts">
+        &nbsp+
+        <a class="button" href="/posts" rel="noopener" title="Blog Posts" style="border: thin solid var(--primary)">
             <span class="button-inner">Blog Posts</span>
         </a>
 
         <br>
         <br>
-        <br>
 
         <center><b><i>Featured Articles</i></b></center>
-        <div class="buttons">
+        <div class="buttons" style="border: thin solid var(--primary); justify-content: left; border-radius: var(--radius)">
             {{- range . }}
-            <a class="button" href="{{ trim .url " " }}" rel="noopener" title="{{ .name | title }}">
-                <span class="button-inner">{{ .name | title }}</span>
+            <a class="button" href="{{ trim .url " " }}" rel="noopener" title="{{ .name | title }}" style="background: var(--theme); padding: 0px">
+                <span class="button-inner">➦ {{ .name | title }}</span>
             </a>
             {{- end }}
         </div>

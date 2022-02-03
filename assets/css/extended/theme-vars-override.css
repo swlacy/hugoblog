@@ -32,14 +32,13 @@ path {
     fill: var(--primary);
 }
 
-nav {
+nav.nav {
     z-index: 2 !important;
     position: fixed;
     background: var(--headercolor);
-    border-bottom: 1px dotted var(--primary);
     line-height: 28pt;
     min-width: 100%;
-    min-width: 100%;
+    max-width: 100%;
 }
 
 main.main {
