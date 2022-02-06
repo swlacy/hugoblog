@@ -1,6 +1,6 @@
 <div class="profile">
     {{- with .Site.Params.profileMode }}
-    <div class="profile_inner">
+    <div class="profile_inner" style="margin-top: 32px">
         {{- if .imageUrl -}}
         <img src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}"
             height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
