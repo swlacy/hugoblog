@@ -46,7 +46,16 @@ main.main {
 }
 
 .profile_inner {
+    max-width: 380px;
+}
+
+.buttons {
     max-width: 330px;
+}
+
+.social-icons a svg {
+    height: 32px;
+    width: 32px;
 }
 
 code {

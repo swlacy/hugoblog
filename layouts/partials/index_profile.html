@@ -10,17 +10,6 @@
         {{- partial "social_icons.html" $.Site.Params.socialIcons -}}
 
         {{- with .buttons }}
-        
-        <a class="button" href="/documents" rel="noopener" title="Documents" style="border: thin solid var(--primary)">
-            <span class="button-inner">Documents</span>
-        </a>
-        &nbsp+
-        <a class="button" href="/posts" rel="noopener" title="Blog Posts" style="border: thin solid var(--primary); margin-right: 19px;">
-            <span class="button-inner">Blog Posts</span>
-        </a>
-
-        <br>
-        <br>
 
         <center><b><i>Featured Articles</i></b></center>
         <div class="buttons" style="border: thin solid var(--primary); justify-content: left; border-radius: var(--radius)">
@@ -30,6 +19,21 @@
             </a>
             {{- end }}
         </div>
+
+        <br>
+
+        <a class="button" href="/posts" rel="noopener" title="Blog Posts" style="background: var(--theme); float: left; margin-left: 33px; padding: 0px">
+            <span class="button-inner">➤ Read my blog posts</span>
+        </a>
+        <a class="button" href="/documents" rel="noopener" title="Documents" style="background: var(--theme); float: left; margin-left: 33px; padding: 0px">
+            <span class="button-inner">➤ Explore the <i>Documents</i> section</span>
+        </a>
+        <a class="button" href="/resume.png" rel="noopener" title="Resume" style="background: var(--theme); float: left; margin-left: 33px; padding: 0px">
+            <span class="button-inner">➤ Check out my resume</span>
+        </a>
+        <a class="button" href="/about" rel="noopener" title="About Me" style="background: var(--theme); float: left; margin-left: 33px; padding: 0px">
+            <span class="button-inner">➤ About Me</span>
+        </a>
         {{- end }}
     </div>
     {{- end}}
