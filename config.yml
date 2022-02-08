@@ -20,7 +20,7 @@ menu:
         url: /documents
         weight: 2
       - name: Resume
-        url: /resume.pdf
+        url: /resume
         weight: 3
       - name: About
         url: /about
