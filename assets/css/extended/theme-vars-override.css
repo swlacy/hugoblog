@@ -80,9 +80,14 @@ body {
     line-height: 1.5;
     text-rendering: optimizeLegibility;
 }
+
 body#top {
     background-image: linear-gradient(var(--theme), var(--grad));
 }
+
+html {
+    min-height: 100%;
+}  
 
 .footer {
     padding-bottom: 6px;
