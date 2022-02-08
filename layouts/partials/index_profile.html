@@ -14,7 +14,7 @@
         <center><b><i>Featured Articles</i></b></center>
         <div class="buttons" style="border: thin solid var(--primary); justify-content: left; border-radius: var(--radius)">
             {{- range . }}
-            <a class="button" href="{{ trim .url " " }}" rel="noopener" title="{{ .name | title }}" style="background: var(--theme); padding: 0px">
+            <a class="button" href="{{ trim .url " " }}" rel="noopener" title="{{ .name | title }}" style="background: none; padding: 0px">
                 <span class="button-inner">➦ {{ .name | title }}</span>
             </a>
             {{- end }}
@@ -22,16 +22,16 @@
 
         <br>
 
-        <a class="button" href="/posts" rel="noopener" title="Blog Posts" style="background: var(--theme); float: left; margin-left: 33px; padding: 0px">
+        <a class="button" href="/posts" rel="noopener" title="Blog Posts" style="background: none; float: left; margin-left: 33px; padding: 0px">
             <span class="button-inner">➤ Read my blog posts</span>
         </a>
-        <a class="button" href="/documents" rel="noopener" title="Documents" style="background: var(--theme); float: left; margin-left: 33px; padding: 0px">
+        <a class="button" href="/documents" rel="noopener" title="Documents" style="background: none; float: left; margin-left: 33px; padding: 0px">
             <span class="button-inner">➤ Explore the <i>Documents</i> section</span>
         </a>
-        <a class="button" href="/resume.pdf" rel="noopener" title="Resume" style="background: var(--theme); float: left; margin-left: 33px; padding: 0px">
+        <a class="button" href="/resume.pdf" rel="noopener" title="Resume" style="background: none; float: left; margin-left: 33px; padding: 0px">
             <span class="button-inner">➤ Check out my resume</span>
         </a>
-        <a class="button" href="/about" rel="noopener" title="About Me" style="background: var(--theme); float: left; margin-left: 33px; padding: 0px">
+        <a class="button" href="/about" rel="noopener" title="About Me" style="background: none; float: left; margin-left: 33px; padding: 0px">
             <span class="button-inner">➤ About Me</span>
         </a>
         {{- end }}

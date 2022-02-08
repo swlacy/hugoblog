@@ -6,13 +6,14 @@
     --tertiary: #cfd0c9c4;
     --content: #262624;
     --hljs-bg: #3b2d29;
-    --code-bg: #e0e1da;
+    --code-bg: #e0e1da00;
     --border: #3b2d29;
     --headercolor: #e0e1dae0;
     --radius: 4px;
     --main-width: 960px;
     --footer-height: 18px;
     --header-height: 40px;
+    --grad: #b48b69;
 }
 
 .dark {
@@ -23,9 +24,10 @@
     --tertiary: #25283280;
     --content: #bbbcd0;
     --hljs-bg: #262631;
-    --code-bg: #161922;
+    --code-bg: #16192200;
     --border: #272c3e;
     --headercolor: #161922c4;
+    --grad: #000000;
 }
 
 path {
@@ -70,7 +72,6 @@ code {
     padding: 0px;
     font-weight: 300;
     color: red;
-
 }
 
 body {
@@ -78,6 +79,9 @@ body {
     font-size: 18px;
     line-height: 1.5;
     text-rendering: optimizeLegibility;
+}
+body#top {
+    background-image: linear-gradient(var(--theme), var(--grad));
 }
 
 .footer {
