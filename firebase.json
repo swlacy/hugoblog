@@ -6,10 +6,16 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [ {
-      "source": "/netdiag",
-      "destination": "/netdiag.png"
-    } ]
+    "rewrites": [
+      {
+        "source": "/netdiag",
+        "destination": "/netdiag.png"
+      },
+      {
+        "source": "/resume",
+        "destination": "/resume.pdf"
+      }
+    ]
   
   }
 }
