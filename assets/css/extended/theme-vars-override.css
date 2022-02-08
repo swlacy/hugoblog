@@ -1,6 +1,6 @@
 :root {
     --theme: #e0e1da;
-    --entry: #e0e1da;
+    --entry: #e0e1da00;
     --primary: #262624;
     --secondary: #262624;
     --tertiary: #cfd0c9c4;
@@ -26,7 +26,7 @@
     --hljs-bg: #262631;
     --code-bg: #16192200;
     --border: #272c3e;
-    --headercolor: #161922c4;
+    --headercolor: #161922e0;
     --grad: #000000;
 }
 
