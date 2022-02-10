@@ -16,6 +16,10 @@
       {
         "source": "/resume",
         "destination": "/resume.pdf"
+      },
+      {
+        "source": "/links",
+        "destination": "/links.html"
       }
     ],
 

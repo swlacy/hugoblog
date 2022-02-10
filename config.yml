@@ -70,16 +70,13 @@ params:
     socialIcons:
         - name: "Email"
           url: "mailto:contact@swlacy.com?subject=Hello!"
-        - name: "GitHub"
-          url: "https://github.com/lacysw"
+        - name: "Twitter"
+          url: "https://twitter.com/actuallysid"
         - name: "LinkedIn"
           url: "https://www.linkedin.com/in/lacysw/"
-        - name: "HackTheBox"
-          url: "https://app.hackthebox.com/profile/787255"
-        - name: "VirusTotal"
-          url: "https://www.virustotal.com/gui/user/slak"
-        - name: "WWUCyber"
-          url: "https://wwucyber.com"
+        - name: "GitHub"
+          url: "https://github.com/lacysw"
+
 
     cover:
         linkFullImages: true
