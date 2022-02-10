@@ -18,7 +18,7 @@
 
 .dark {
     --theme: #161922;
-    --entry: #161922;
+    --entry: #16192200;
     --primary: #bbbcd0;
     --secondary: #ced0bb;
     --tertiary: #25283280;
@@ -66,7 +66,7 @@ code {
 
 .post-content code {
     font-family:'Fira Mono', monospace;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
     margin: 0px;
     padding: 0px;
@@ -95,4 +95,8 @@ html {
 
 .profile img {
     border-radius: 8%;
+}
+
+.post-content hr {
+    background: var(--primary);
 }
