@@ -53,6 +53,12 @@ main.main {
     max-width: 330px;
 }
 
+.button, article.post-entry {
+    border: solid 1px var(--primary);
+    box-shadow: 0 1px;
+    background: var(--tertiary);
+}
+
 .social-icons a svg {
     height: 32px;
     width: 32px;
