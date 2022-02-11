@@ -6,33 +6,47 @@
             height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
         {{- end }}
         <h1>{{ .title | default $.Site.Title | markdownify }}</h1>
+
         <span>{{ .subtitle | markdownify }}</span>
+        
         {{- partial "social_icons.html" $.Site.Params.socialIcons -}}
         {{- with .buttons }}
 
-        <center><b><i>Featured Articles</i></b></center>
-        <div class="buttons" style="border: thin solid var(--primary); justify-content: left; border-radius: var(--radius)">
-            {{- range . }}
-            <a class="button" href="{{ trim .url " " }}" rel="noopener" title="{{ .name | title }}" style="background: none; padding: 0px">
-                <span class="button-inner">➦ {{ .name | title }}</span>
-            </a>
-            {{- end }}
-        </div>
+        <a class="button" href="/posts" rel="noopener" title="Blog Posts">
+            <span class="button-inner">Blog Posts</span>
+        </a>
+        <a class="button" href="/documents" rel="noopener" title="Documents">
+            <span class="button-inner">Documents</span>
+        </a>
 
-        <br>
+        <h3 style="padding-top: 36px; padding-bottom: 12px;">Featured Posts</h3>
 
-        <a class="button" href="/posts" rel="noopener" title="Blog Posts" style="background: none; float: left; margin-left: 33px; padding: 0px">
-            <span class="button-inner">➤ Read my blog posts</span>
-        </a>
-        <a class="button" href="/documents" rel="noopener" title="Documents" style="background: none; float: left; margin-left: 33px; padding: 0px">
-            <span class="button-inner">➤ Explore the <i>Documents</i> section</span>
-        </a>
-        <a class="button" href="/resume" rel="noopener" title="Resume" style="background: none; float: left; margin-left: 33px; padding: 0px">
-            <span class="button-inner">➤ Check out my resume</span>
-        </a>
-        <a class="button" href="/about" rel="noopener" title="About Me" style="background: none; float: left; margin-left: 33px; padding: 0px">
-            <span class="button-inner">➤ About Me</span>
-        </a>
+        <article class="post-entry" style="text-align: left">
+            <header class="entry-header">
+                <h2>Fishing for Malware Series</h2>
+            </header>
+            <section class="entry-content">
+                <p>Analysis of malicious external interactions with T-POT</p>
+            </section>
+            <footer class="entry-footer">
+                <span title="2022-02-09 00:00:00 +0000 UTC">January 22, 2022 — February 9, 2022</span> · 32 Minute Read · 5 Parts
+            </footer>
+            <a class="entry-link" aria-label="Fishing for Malware — Part One: Introduction" href="https://swlacy.com/posts/fishing-for-malware-1/"></a>
+        </article>
+
+        <article class="post-entry" style="text-align: left">
+            <header class="entry-header">
+                <h2>HackTheBox — Previse</h2>
+            </header>
+            <section class="entry-content">
+                <p>Comprehensive walkthrough of the retired Previse machine on HackTheBox</p>
+            </section>
+            <footer class="entry-footer">
+                <span title="2021-12-03 00:00:00 +0000 UTC">December 22, 2021</span> · 14 Minute Read
+            </footer>
+            <a class="entry-link" aria-label="HackTheBox — Previse" href="https://swlacy.com/documents/previse/"></a>
+        </article>
+
         {{- end }}
     </div>
     {{- end}}
