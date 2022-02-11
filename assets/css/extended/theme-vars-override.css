@@ -13,7 +13,6 @@
     --main-width: 960px;
     --footer-height: 18px;
     --header-height: 40px;
-    --grad: #b48b69;
 }
 
 .dark {
@@ -27,7 +26,6 @@
     --code-bg: #16192200;
     --border: #272c3e;
     --headercolor: #161922e0;
-    --grad: #000000;
 }
 
 path {
@@ -82,7 +80,7 @@ body {
 }
 
 body#top {
-    background-image: linear-gradient(var(--theme), var(--grad));
+    background-color: var(--theme);
 }
 
 html {
