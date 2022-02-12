@@ -7,7 +7,7 @@ tags: [tools]
 description: "Fun with Cobalt Strike v4.5"
 summary: "Fun with Cobalt Strike v4.5"
 cover:
-    image: "/posts/playing-with-cobalt-strike-cover.jpg"
+    image: "/media/playing-with-cobalt-strike-cover.jpg"
     alt: "'Late Night Working', @josef_photography, (Unsplash, 2018)"
     caption: "'Late Night Working', @josef_photography, Unsplash"
 date: 2022-02-11

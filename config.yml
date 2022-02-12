@@ -63,7 +63,7 @@ params:
         imageHeight: 196
         buttons:
             - name: "Fishing for Malware Series"
-              url: "/posts/fishing-for-malware-1"
+              url: "/media/fishing-for-malware-1"
             - name: "HackTheBox: Previse Report"
               url: "/documents/previse"
 
