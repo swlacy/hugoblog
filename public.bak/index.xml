@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Sid&#39;s Blog</title>
+    <link>https://swlacy.com/</link>
+    <description>Recent content on Sid&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://swlacy.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Playing With Cobalt Strike</title>
+      <link>https://swlacy.com/posts/playing-with-cobalt-strike/</link>
+      <pubDate>Fri, 11 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://swlacy.com/posts/playing-with-cobalt-strike/</guid>
+      <description>Fun with Cobalt Strike v4.5</description>
+    </item>
+    
+    <item>
+      <title>Fishing for Malware — Part Five: Finale</title>
+      <link>https://swlacy.com/posts/fishing-for-malware-5/</link>
+      <pubDate>Wed, 09 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://swlacy.com/posts/fishing-for-malware-5/</guid>
+      <description>Analysis of malware dropped into my Google Cloud honeypot – an examination of collected data</description>
+    </item>
+    
+    <item>
+      <title>Fishing for Malware — Part Four: Raspberry Pi IRC Bot</title>
+      <link>https://swlacy.com/posts/fishing-for-malware-4/</link>
+      <pubDate>Fri, 28 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://swlacy.com/posts/fishing-for-malware-4/</guid>
+      <description>Analysis of malware dropped into my Google Cloud honeypot – fun with Bash on R. Pi</description>
+    </item>
+    
+    <item>
+      <title>Fishing for Malware — Part Three: WannaCry</title>
+      <link>https://swlacy.com/posts/fishing-for-malware-3/</link>
+      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://swlacy.com/posts/fishing-for-malware-3/</guid>
+      <description>Analysis of malware dropped into my Google Cloud honeypot – WannaCry</description>
+    </item>
+    
+    <item>
+      <title>Fishing for Malware — Part Two: Android Crypto Miner</title>
+      <link>https://swlacy.com/posts/fishing-for-malware-2/</link>
+      <pubDate>Sun, 23 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://swlacy.com/posts/fishing-for-malware-2/</guid>
+      <description>Analysis of malware dropped into my Google Cloud honeypot — pulling apart a rudimentry Android cypto miner</description>
+    </item>
+    
+    <item>
+      <title>Fishing for Malware — Part One: Introduction</title>
+      <link>https://swlacy.com/posts/fishing-for-malware-1/</link>
+      <pubDate>Sat, 22 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://swlacy.com/posts/fishing-for-malware-1/</guid>
+      <description>Analysis of malware dropped into my Google Cloud honeypot — preliminary notes</description>
+    </item>
+    
+    <item>
+      <title>Running macOS as a Cybersecurity Student</title>
+      <link>https://swlacy.com/posts/macos-cybersecurity-student/</link>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://swlacy.com/posts/macos-cybersecurity-student/</guid>
+      <description>My personal perspective on running MacOS as a Cybersecurity student — not everyone&amp;#39;s first choice</description>
+    </item>
+    
+    <item>
+      <title>Documenting My Network</title>
+      <link>https://swlacy.com/posts/documenting-my-network/</link>
+      <pubDate>Mon, 03 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://swlacy.com/posts/documenting-my-network/</guid>
+      <description>Running inventory for interviews</description>
+    </item>
+    
+    <item>
+      <title>First Post</title>
+      <link>https://swlacy.com/posts/first-post/</link>
+      <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://swlacy.com/posts/first-post/</guid>
+      <description>First Post</description>
+    </item>
+    
+    <item>
+      <title>HackTheBox — Previse</title>
+      <link>https://swlacy.com/documents/previse/</link>
+      <pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://swlacy.com/documents/previse/</guid>
+      <description>Comprehensive walkthrough of the retired Previse machine on HackTheBox</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://swlacy.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://swlacy.com/about/</guid>
+      <description>My name is Sid Lacy. I am a student at Western Washington University, double-majoring in cybersecurity and political science; I aspire to one day fill a role in my professional life that sees some intersection between the two. Currently, I also cohead and represent the Western Washington University Cybersecurity Club as a member of the Cybersecurity Department, working with my peers to spread awareness and discuss contemporary news related to cybersecurity, and to promote activity in security-related technical events.</description>
+    </item>
+    
+    
+    <item>
+      <title>Attribution</title>
+      <link>https://swlacy.com/attribution/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://swlacy.com/attribution/</guid>
+      <description>I would neither be able to create nor maintain this website without the hard work of other programmers and designers. The following list documents the significant frameworks, code, and ideas that I used while designing swlacy.com.
+ SSG: Hugo Theme: tweaked PaperMod Image zoom: medium-zoom Color schemes: Rust language book Syntax highlighting: highlight.js — espresso.min.js SVG icons: Font Awesome v6 Beta Cover art: Japanese prints from the MET website  </description>
+    </item>
+    
+    
+  </channel>
+</rss>
