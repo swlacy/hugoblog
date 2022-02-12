@@ -11,7 +11,7 @@ date: 2022-02-08
 cover:
     image: "/documents/htbhardwarechallenges.png"
 ShowToc: true
-TocOpen: true
+TocOpen: false
 draft: true
 ---
 
