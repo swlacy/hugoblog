@@ -15,6 +15,6 @@ I would neither be able to create nor maintain this website without the hard wor
  - SVG icons: [Font Awesome v6 Beta](https://fontawesome.com/)
  - Background scheme: [Hero Patterns: Topography](https://heropatterns.com/)
 
-The source code of this website and all related assets can be found aon GitHub under [lacysw/hugoblog](https://github.com/lacysw/hugoblog).
+The source code of this website and all related assets can be found on GitHub under [lacysw/hugoblog](https://github.com/lacysw/hugoblog).
 
 Source license: MIT.
