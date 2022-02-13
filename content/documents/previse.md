@@ -4,7 +4,7 @@ description: Comprehensive walkthrough of the retired Previse machine on HackThe
 keywords: ['sid', 'lacy', 'blog', 'website', 'cybersecurity', 'security', 'computer', 'hackthebox', 'htb', 'tech', 'previse']
 hide_table_of_contents: false
 ShowReadingTime: true
-ShowBreadCrumbs: false
+ShowBreadCrumbs: true
 ShowPostNavLinks: false
 summary: Comprehensive walkthrough of the retired Previse machine on HackTheBox
 date: 2021-12-23
