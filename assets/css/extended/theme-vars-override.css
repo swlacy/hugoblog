@@ -114,3 +114,29 @@ html {
 .post-content hr {
     background: var(--primary);
 }
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: var(--theme);
+  border: solid 1px var(--primary);
+  box-shadow: 0 1px;
+  background: var(--tertiary);
+  border-radius: var(--radius);
+  z-index: 3;
+}
+
+.dropdown-content a {
+  float: none;
+  padding: 8px var(--content-gap);
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: red;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

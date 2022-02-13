@@ -87,21 +87,17 @@
         </div>
         {{- $currentPage := . }}
         <ul id="menu">
-            {{- range .Site.Menus.main }}
-            {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
-            {{- $page_url:= $currentPage.Permalink | absLangURL }}
-            {{- $is_search := eq ($.Site.GetPage .KeyName).Layout `search` }}
-            <li>
-                <a href="{{ .URL | absLangURL }}" title="Search"
-                {{- cond $is_search (" accesskey=/" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
-                    <span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
-                        {{- .Pre }}
-                        {{- .Name -}}
-                        {{ .Post -}}
-                    </span>
-                </a>
-            </li>
-            {{- end }}
+            <div class="dropdown">
+                <button style="font-size: 24px; font-weight: 700">➥ Menu</button>
+                <div class="dropdown-content">
+                    <a href="/posts">Blog</a>
+                    <a href="/documents">Docs</a>
+                    <a href="/resume">Resume</a>
+                    <a href="/about">About</a>
+                    <a href="/archive">Archive</a>
+                    <a href="/search">Search</a>
+                </div>
+            </div>
         </ul>
     </nav>
 </header>
