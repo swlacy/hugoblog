@@ -58,7 +58,7 @@ main.main {
     padding-top: 52px;
     background-color: var(--headercolor);
     z-index: 1;
-    min-height: 100vh;
+    height: calc(100vh - 30px);
 }
 
 footer.footer, nav.nav {
