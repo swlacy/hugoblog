@@ -37,7 +37,7 @@ params:
     Description: "I write about computer security"
     keywords: [Sid, Lacy, Blog, Security, Cybersecurity, Computer, HackTheBox, Project, Career, Resume, GitHub, LinkedIn, Site]
     env: production
-    defaultTheme: light
+    defaultTheme: auto
     ShowReadingTime: true
     ShowBreadCrumbs: true
     ShowCodeCopyButtons: true
