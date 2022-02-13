@@ -10,9 +10,9 @@ author: [""]
 <h1><center>Link of Links</center></h1>
 <p><center>A list of my services and contact information can be found below.</center></p>
 
-<div class=post-content>
+<div class=post-content style="max-width: 540px; margin-left: auto; margin-right: auto;">
 
-<a class="button" href="mailto:contact@swlacy.com?subject=Hello!" rel="noopener" title="Email" style="border: solid 1px var(--primary); display:flex; justify-content: center">
+<a class="button" href="mailto:contact@swlacy.com?subject=Hello!" rel="noopener" title="Email" style="border: solid 1px var(--primary); display: flex;justify-content: center">
     <span class="button-inner">Email</span>
 </a>
 
