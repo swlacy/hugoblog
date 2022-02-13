@@ -153,27 +153,32 @@ html {
 }
 
 .dropdown-content {
-  display: none;
-  position: fixed;
-  background-color: var(--theme);
-  border: solid 1px var(--border);
-  box-shadow: 0 1px;
-  background: var(--tertiary);
-  border-radius: var(--radius);
-  z-index: 3;
+    display: none;
+    position: fixed;
+    background-color: var(--theme);
+    border: solid 1px var(--border);
+    box-shadow: 0 1px;
+    background: var(--tertiary);
+    border-radius: var(--radius);
+    z-index: 3;
 }
 
 .dropdown-content a {
-  float: none;
-  padding: 8px var(--content-gap);
-  display: block;
-  text-align: left;
+    color: var(--primary);
+}
+
+.dropdown-content a {
+    float: none;
+    padding: 8px var(--content-gap);
+    display: block;
+    text-align: left;
 }
 
 .dropdown-content a:hover {
-  background-color: red;
+    color: var(--theme);
+    background-color: var(--primary);
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
