@@ -5,7 +5,7 @@ ShowBreadCrumbs: false
 ShowShareButtons: false
 ---
 
-I would neither be able to create nor maintain this website without the hard work of other programmers and designers. The following list documents the significant frameworks, code, and ideas that I used while designing *swlacy.com*.
+I would neither be able to create nor maintain this website without the hard work of other programmers and designers. The following list documents the significant frameworks, code, and ideas that I used while designing *swlacy.com*. Assets not documented on this page are credited using captions at their source locations.
 
  - SSG: [Hugo](https://gohugo.io)
  - Theme: tweaked [PaperMod](https://github.com/adityatelange/hugo-PaperMod)
@@ -13,4 +13,4 @@ I would neither be able to create nor maintain this website without the hard wor
  - Color schemes: [Rust language book](https://doc.rust-lang.org/book)
  - Syntax highlighting: [highlight.js — *espresso.min.js*](https://highlightjs.org/)
  - SVG icons: [Font Awesome v6 Beta](https://fontawesome.com/)
- - Cover art: [Japanese prints from the MET website](https://www.metmuseum.org)
+ - Background scheme: [Hero Patterns: Topography](https://heropatterns.com/)
