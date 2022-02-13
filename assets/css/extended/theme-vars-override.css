@@ -66,6 +66,11 @@ footer.footer, nav.nav {
     z-index: 1;
 }
 
+nav.nav {
+    background-color: var(--theme);
+    background: var(--tertiary);
+}
+
 .nav {
     max-width: 1008px;
     border-left: solid 1px var(--border);
