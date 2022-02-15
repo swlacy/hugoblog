@@ -3,7 +3,7 @@ title: About Me
 keywords: ['sid', 'lacy', 'about', 'blog', 'website', 'cybersecurity', 'security', 'computer', 'hackthebox', 'htb', 'tech']
 hide_table_of_contents: true
 cover:
-    image: "craterLake.jpg"
+    image: "media/craterLake.jpg"
     alt: "Crater Lake, OR; captured by me in the summer of 2021"
     caption: "Crater Lake, OR; captured by me in the summer of 2021"
     relative: false
