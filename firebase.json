@@ -11,11 +11,11 @@
     "rewrites": [
       {
         "source": "/netdiag",
-        "destination": "/netdiag.png"
+        "destination": "/media/netdiag.png"
       },
       {
         "source": "/resume",
-        "destination": "/resume.pdf"
+        "destination": "/media/resume.pdf"
       }
     ],
 
