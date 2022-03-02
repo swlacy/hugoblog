@@ -23,7 +23,7 @@ Further, I have arguably managed to be rather frugal while building my network a
 
 ![Diagram of my home network](/netdiag_old.png)
 
-**EDIT (2022.02.16): see an updated version of this diagram [*here*]{/netdiag.png}.**
+**EDIT (2022.03.01): see an updated version of this diagram [*here*]{/netdiag.png}.**
 
 Using [Lucid](https://lucid.app), I created an illustration of the significant devices within my network and how they relate to one another. Of significant note: the majority of client devices and the model of my edge router have been excluded, as the clients on my network have no significance as they relate to the architecture of the network and I have no intention of broadcasting what router I use in case somehow a related CVE is discovered and exploited faster than I can patch it. I recognize that security by obscurity is, of course, not a viable strategy, but my point stands.
 
