@@ -32,7 +32,7 @@ Paper requires the submission of `USER` and `SYSTEM` flags; I have described the
 
 Paper is a single-machine CTF, for which HackTheBox has already provided the IP address (`10.10.11.143`). For clarity, I have added this address to my hosts file as `paper.htb`. A quick connectivity test:
 
-```bash
+```none
 $ ping paper.htb
 PING paper.htb (10.10.11.143) 56(84) bytes of data.
 64 bytes from paper.htb (10.10.11.143): icmp_seq=1 ttl=63 time=75.5 ms
@@ -51,7 +51,7 @@ $
 
 Let's begin as usual with an NMAP scan on the target; taking some inspiration from [IppSec](https://www.youtube.com/channel/UCa6eh7gCkpPo5XXUDfygQQA), executing [`nmap -sC -sV -oA paper paper.htb`](https://explainshell.com/explain?cmd=nmap+-sC+-sV+-oA+paper+paper.htb) will hopefully reveal some information of interest.
 
-```bash
+```none
 $ nmap -sC -sV -oA paper paper.htb
 Starting Nmap 7.92 ( https://nmap.org )
 Nmap scan report for paper.htb (10.10.11.143)
@@ -259,7 +259,7 @@ It worked — "we're in."
 
 Now that we have achieved unrestricted access to `/home/dwight` via SSH, we can explore the file structure.
 
-```bash
+```none
 [dwight@paper ~]$ ls
 bot_restart.sh  hubot  sales  user.txt
 ```
@@ -268,14 +268,14 @@ Just like that, the `USER` flag has been found!
 
 ### USER
 
-```
+```none
 [dwight@paper ~]$ cat user.txt
 !REDACTED
 [dwight@paper ~]$
 ```
 ### SYSTEM
 
-```bash
+```none
 [dwight@paper ~]$ sudo -l
 [sudo] password for dwight: 
 Sorry, user dwight may not run sudo on paper.
@@ -288,7 +288,7 @@ As `dwight` is not in the `sudoers` file, privilege escalation is required to pr
 
 The immediately apparent solution, to me, is the use of [PwnKit](https://blog.qualys.com/vulnerabilities-threat-research/2022/01/25/pwnkit-local-privilege-escalation-vulnerability-discovered-in-polkits-pkexec-cve-2021-4034), the `pkexec` exploit discovered earlier this year (cve-2021-4034). However, when I tried to compile the exploit, kindly provided by [@bl4sty](https://twitter.com/bl4sty) on [haxx.in](https://haxx.in/exploits/), the process failed.
 
-```bash
+```none
 [dwight@paper .hidden]$ gcc blasty-vs-pkexec2.c
 /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o: In function '_start':
 (.text+0x24): undefined reference to 'main'
@@ -299,7 +299,7 @@ collect2: error: ld returned 1 exit status
 
 I then uploaded the binary, precompiled, using SCP, but it appears that it has been patched on Paper.
 
-```bash
+```none
 [dwight@paper .hidden]$ ./blasty-vs-pkexec2
 [dwight@paper .hidden]$ # :(
 ```
@@ -308,7 +308,7 @@ I then uploaded the binary, precompiled, using SCP, but it appears that it has b
 
 However, [a different PolKit exploit written in Python](https://github.com/Almorabea/Polkit-exploit/blob/main/CVE-2021-3560.py) *is* functional on Paper:
 
-```bash
+```none
 [dwight@paper .hidden]$ python3 a.py
 **************
 Exploit: Privilege escalation with polkit - CVE-2021-3560
