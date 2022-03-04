@@ -5,7 +5,7 @@ theme: PaperMod
 paginate: 15
 enableRobotsTXT: true
 
-pygmentsOptions: "linenos=table"
+pygmentsOptions: "linenos=inline"
 
 googleAnalytics: G-QFRYSRDLC1
 
