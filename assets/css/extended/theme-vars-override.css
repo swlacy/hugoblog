@@ -47,6 +47,7 @@ main.main {
     background-color: var(--headercolor);
     z-index: 1;
     min-height: calc(100vh - 30px);
+    overflow: hidden;
 }
 
 footer.footer, nav.nav {

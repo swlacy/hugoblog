@@ -60,7 +60,7 @@ params:
         enabled: true
         title: "Hi, my name is Sid."
         subtitle: "Welcome to my website — I'm glad you're here. I ramble about computer security and technology. Feel free to take a look!"
-        imageUrl: "headshot.png"
+        imageUrl: "/media/headshot.png"
         imageTitle: "Sid Lacy"
         imageWidth: 196
         imageHeight: 196
