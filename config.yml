@@ -7,6 +7,9 @@ enableRobotsTXT: true
 
 googleAnalytics: G-QFRYSRDLC1
 
+PygmentsCodeFences: true
+PygmentsStyle: "monokai"
+
 minify:
   disableXML: true
   minifyOutput: true
