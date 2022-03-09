@@ -218,7 +218,7 @@ As with the Excel macro, running this script on the victim host also established
 
 ## Special Delivery
 
-Certain situations may present themselves in which an attacker has difficulty planting a file into the victim's environment; thus, HelpSystems has established alternative delivery methods. One such method is *Scripted Web-Delivery," an all-in-one setup that hosts a malicious file and provides one-liners in different languages to automate fetching and executing the file on the victim host.
+Certain situations may present themselves in which an attacker has difficulty planting a file into the victim's environment; thus, HelpSystems has established alternative delivery methods. One such method is *Scripted Web-Delivery,* an all-in-one setup that hosts a malicious file and provides one-liners in different languages to automate fetching and executing the file on the victim host.
 
 ![Screenshot of Cobalt Strike Scripted Web-Delivery](/media/playing-with-cobalt-strike-8.png)
 
