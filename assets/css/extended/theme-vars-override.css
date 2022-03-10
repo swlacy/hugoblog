@@ -169,3 +169,9 @@ html {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.top-link {
+    border-radius: var(--radius);
+    border: solid 1px var(--border);
+    box-shadow: 0 1px;
+}
