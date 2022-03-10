@@ -13,7 +13,7 @@ ShowShareButtons: false
 ---
 
 {{< rawhtml >}}
-<img src="/media/headshot.png" alt="It's Me" style="margin: 0px 30px 0px 0px; max-width: 25%; float: left"/>
+<img src="/media/headshot.png" alt="It's Me" style="margin: 0px 20px 0px 0px; max-width: 25%; float: left"/>
 {{< /rawhtml >}}
 
 Hello!
@@ -29,9 +29,9 @@ If you would like to reach out to me for any reason, you may easily do so via [e
 Thank you again for visiting!
 
 {{< rawhtml >}}
-<div style="max-width: 25%; float: right; margin-right: 16px">
+<div style="max-width: 196px; float: right; margin-right: 16px">
     Kind regards,
-    <img src="/media/sig2.png" style="margin-top: -10px; margin-bottom: -25px;"/>
+    <img src="/media/sig2.png" style="margin-top: -10px; margin-bottom: -30px;"/>
     Sid Lacy
 </div>
 {{< /rawhtml >}}
