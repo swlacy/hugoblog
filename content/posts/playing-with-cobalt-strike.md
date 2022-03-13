@@ -24,7 +24,7 @@ By certain means, I have obtained a copy of Cobalt Strike version 4.5, released 
 
 I prefer to host my testing machines off-site, especially when dealing with unverified software, such as my copy of Cobalt Strike. To facilitate that, Google's Cloud Compute Engine comes in handy. Unfortunately, due to licensing agreements with Microsoft, it is cheaper to run Windows hosts in Azure, so I have split my network like so:
 
-```none
+```
 Google Cloud VPC
 └ Cobalt Strike (Debian 10)
 Azure VPC

