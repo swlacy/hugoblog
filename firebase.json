@@ -28,7 +28,7 @@
         { "key" : "X-XSS-Protection", "value" : "1; mode=block" },
         { "key": "Referrer-Policy", "value": "no-referrer" },
         { "key": "Permissions-Policy", "value": "interest-cohort=()" },
-        {"key": "Content-Security-Policy", "value": "default-src 'self'; img-src 'self'; style-src 'self' https://swlacy.com https://www.googletagmanager.com; font-src 'self'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' https://swlacy.com https://www.googletagmanager.com; block-all-mixed-content; upgrade-insecure-requests;"}
+        {"key": "Content-Security-Policy", "value": "upgrade-insecure-requests; block-all-mixed-content;"}
       ]
     }],
 
