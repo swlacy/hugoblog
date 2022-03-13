@@ -10,6 +10,7 @@ I would neither be able to create nor maintain this website without the hard wor
  - SSG: [Hugo](https://gohugo.io)
  - Theme: tweaked [PaperMod](https://github.com/adityatelange/hugo-PaperMod)
  - Image zoom: [medium-zoom](https://github.com/francoischalifour/medium-zoom)
+ - Reading progress bar: tweaked [code from W3 Schools](https://www.w3schools.com/howto/howto_js_scroll_indicator.asp)
  - Color schemes: [Rust language book](https://doc.rust-lang.org/book)
  - SVG icons: [Font Awesome v6 Beta](https://fontawesome.com/)
  - Background scheme: [Hero Patterns: Circuit Board](https://heropatterns.com/)
