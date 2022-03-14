@@ -45,8 +45,8 @@
             {{- $label_text := (.Site.Params.label.text | default .Site.Title) }}
             {{- if .Site.Title }}
             <a href="/" title="Home">
-                <img src="/media/favDark.png" alt="logo" data-icon="sun" id=sun class="svg-inline--fa fa-sun" aria-label="logo" height="{{- .Site.Params.label.iconHeight | default " 21px" -}}">
-                <img src="/media/favLight.png" alt="logo" data-icon="moon" id=moon class="svg-inline--fa fa-moon" aria-label="logo" height="{{- .Site.Params.label.iconHeight | default " 21px" -}}">
+                <!-- <img src="/media/favDark.png" alt="logo" data-icon="sun" id=sun class="svg-inline--fa fa-sun" aria-label="logo" height="{{- .Site.Params.label.iconHeight | default " 21px" -}}"> -->
+                <img src="/favicon-32x32.png" alt="logo" data-icon="moon" class="svg-inline--fa fa-moon" aria-label="logo" height="21px" style="margin-bottom: 2px; margin-right: 10px;">
                 {{- $label_text -}}
             </a>
             {{- end }}
@@ -85,7 +85,10 @@
         {{- $currentPage := . }}
         <ul id="menu">
             <div class="dropdown">
-                <button style="font-size: 24px; font-weight: 700">▼ Menu</button>
+                <button style="font-size: 24px; font-weight: 700">
+                        <img src="/media/menu.svg" alt="menu" aria-label="logo" height="21px" style="float: left; margin-top: 9px; margin-right: 10px;">
+                        Menu
+                </button>
                 <div class="dropdown-content">
                     <a href="/posts">Blog</a>
                     <a href="/documents">Docs</a>
