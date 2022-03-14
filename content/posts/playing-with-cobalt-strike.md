@@ -3,7 +3,7 @@ slug: playing-with-cobalt-strike
 title: "Playing With Cobalt Strike"
 authors: [sid]
 keywords: ['sid', 'lacy', 'blog', 'website', 'cybersecurity', 'security', 'computer', 'honeypot', 'malware', 'tech', 'network']
-tags: [tools]
+tags: [tools, 'cobalt strike', 'red team']
 description: "Fun with Cobalt Strike v4.5"
 summary: "Fun with Cobalt Strike v4.5"
 cover:
