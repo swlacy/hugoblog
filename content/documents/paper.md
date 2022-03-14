@@ -230,7 +230,7 @@ The credential set for user *recyclops* has been obtained! Note that I have reda
 
 Recalling the earlier Nmap scan, port 22 for SSH is open — therefore, let's attempt to log in with the `recyclops` bot credentials.
 
-```
+```text
 $ ssh recyclops@paper.htb
 The authenticity of host 'paper.htb (10.10.11.143)' can't be established.
 ECDSA key fingerprint is SHA256:2eiFA8VFQOZukubwDkd24z/kfLkdKlz4wkAa/lRN3Lg.
@@ -242,7 +242,7 @@ Permission denied, please try again.
 
 That didn't work, so I assume `recyclops` is not a system user, only a Rocket Chat user. Since all files in the Rocket Chat directory are owned by user `dwight`, let's try `dwight`:`!REDACTED` instead of `recyclops`:`!REDACTED` over SSH.
 
-```
+```text
 $ ssh dwight@paper.htb
 dwight@paper.htb's password: 
 Activate the web console with: systemctl enable --now cockpit.socket
@@ -259,7 +259,7 @@ It worked — "we're in."
 
 Now that we have achieved unrestricted access to `/home/dwight` via SSH, we can explore the file structure.
 
-```
+```text
 [dwight@paper ~]$ ls
 bot_restart.sh  hubot  sales  user.txt
 ```
@@ -268,14 +268,14 @@ Just like that, the `USER` flag has been found!
 
 ### USER
 
-```
+```text
 [dwight@paper ~]$ cat user.txt
 !REDACTED
 [dwight@paper ~]$
 ```
 ### SYSTEM
 
-```
+```text
 [dwight@paper ~]$ sudo -l
 [sudo] password for dwight: 
 Sorry, user dwight may not run sudo on paper.
@@ -288,7 +288,7 @@ As `dwight` is not in the `sudoers` file, privilege escalation is required to pr
 
 The immediately apparent solution, to me, is the use of [PwnKit](https://blog.qualys.com/vulnerabilities-threat-research/2022/01/25/pwnkit-local-privilege-escalation-vulnerability-discovered-in-polkits-pkexec-cve-2021-4034), the `pkexec` exploit discovered earlier this year (cve-2021-4034). However, when I tried to compile the exploit, kindly provided by [@bl4sty](https://twitter.com/bl4sty) on [haxx.in](https://haxx.in/exploits/), the process failed.
 
-```
+```text
 [dwight@paper .hidden]$ gcc blasty-vs-pkexec2.c
 /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o: In function '_start':
 (.text+0x24): undefined reference to 'main'
