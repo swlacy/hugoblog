@@ -1,9 +1,9 @@
 :root {
     --theme: #fdf2e6;
     --entry: #00000000;
-    --primary: #2e2c29;
+    --primary: #272624;
     --secondary: var(--primary);
-    --tertiary: #272624;
+    --tertiary: #efe0d0;
     --content: var(--primary);
     --hljs-bg: var(--primary);
     --code-bg: #00000000;
