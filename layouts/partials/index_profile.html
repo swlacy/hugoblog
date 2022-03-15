@@ -5,7 +5,7 @@
         <img src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}"
             height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
         {{- end }}
-        <h1>{{ .title | default $.Site.Title | markdownify }}</h1>
+        <h1 style="justify-content: left;">{{ .title | default $.Site.Title | markdownify }}</h1>
 
         <span>{{ .subtitle | markdownify }}</span>
         
