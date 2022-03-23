@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Ubuntu Regular';
+    src: url(/fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Ubuntu Medium';
+    src: url(/fonts/Ubuntu/Ubuntu-Medium.ttf);
+}
+
 :root {
     --theme: #fdf2e6;
     --entry: #00000000;
@@ -99,7 +109,7 @@ code {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Ubuntu Regular', sans-serif;
     font-size: 18px;
     line-height: 1.5;
     text-rendering: optimizeLegibility;
