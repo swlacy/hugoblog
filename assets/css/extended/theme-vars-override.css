@@ -4,8 +4,13 @@
 }
 
 @font-face {
-    font-family: 'Ubuntu Medium';
-    src: url(/fonts/Ubuntu/Ubuntu-Medium.ttf);
+    font-family: 'Ubuntu Regular';
+    src: url(/fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Cascadia Code';
+    src: url(/fonts/Cascadia/CascadiaCode.ttf);
 }
 
 :root {
@@ -95,11 +100,11 @@ nav.nav {
 }
 
 code {
-    font-family:'Fira Mono', monospace;
+    font-family:'Cascadia Code', monospace;
 }
 
 .post-content code {
-    font-family:'Fira Mono', monospace;
+    font-family:'Cascadia Code', monospace;
     font-size: 16px;
     line-height: 1.5;
     margin: 0px;
