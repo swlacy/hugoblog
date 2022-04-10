@@ -19,6 +19,8 @@ Alright, perhaps the above definition is somewhat more dramatic than reality. St
 
 ## Technical Questions
 
+In the context of job interviews, I define a *technical question* as a problem or set of problems regarding the implementation or maintenance of business procedures with one or more definitive "correct answers." That is, there must be one or more sets of clearly defined steps which will effectively solve the issue at hand. Technical questions have answers that employers can expect relativly consistant responses to; they are "study problems."
+
 ### Describe the steps which occur when a user visits a website in their browser, assuming HTTP.
 
 *Asked by Amazon for the role "Security Engineer Internship - Summer 2022 (US)" in March of 2022*.
@@ -50,7 +52,7 @@ Alright, perhaps the above definition is somewhat more dramatic than reality. St
      - The server at `example.com` responds with HTTP code `404`, which means that the resource cannot be found, and typically an HTML page that says as much. The browser renders the HTML in the file onto the user's screen.
      - The server at `example.com` responds with HTTP code `500`, which means that an undisclosed issue is occurring on the server's end; thus, the requested resource cannot be served. The browser displays this information to the user's screen.
 
-    The process is now complete.
+The process is now complete.
 
 ### You need to offer services to remote (WFH) employees over the Internet but do not want those services facing the Internet. Why would you want to do this? How would you accomplish this task?
 
@@ -74,3 +76,5 @@ A VPN, or a *Virtual Private Network*, provides an end-to-end, encrypted channel
 
 
 ## Culture Questions
+
+*Culture questions* are a bit different, as they largely depend on the background of the prospective employee. These are not questions that anyone but you can make a guide for. Regardless, while they do not include answers, some culture questions I have been asked are below.
