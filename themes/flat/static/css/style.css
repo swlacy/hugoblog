@@ -226,6 +226,7 @@ p img {
     margin: 6px;
     max-width: 340px;
     text-decoration: none;
+    border: dotted 1px var(--content);
 }
 
 .front-page-buttons {
@@ -233,6 +234,7 @@ p img {
     width: 284px;
     height:284px;
     margin: 36px;
+    border: none;
 }
 
 .front-page-desc {
