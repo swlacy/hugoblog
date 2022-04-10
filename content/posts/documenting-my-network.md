@@ -17,7 +17,6 @@ I recently interviewed virtually for a remote junior sysadmin role at a local co
 
 One topic the company hiring manager and sysadmin team raised with me during the technical interview round was my network and home lab; specifically, if I could describe it in detail and what I might change about it given the opportunity. As I was sharing my screen at the time, what better to show than a plot of my network as I reviewed each component? Alas, what documentation I did have was poor quality and severely outdated — overall, not something of any genuine use.
 
-<!--truncate-->
 
 I felt I should refresh my network diagram, both in case a similar situation arises and for my benefit. After all, it *is* perhaps ironic that, as invested as I am in the world of security and networking, I was still logging into my router's web interface to view devices in my DHCP pools each time I forgot the IP address of a machine I needed to connect to...
 
@@ -89,8 +88,3 @@ I use [Proxmox VE](https://www.proxmox.com/en/proxmox-ve) as a bare-metal VMM, c
 Reflecting on my current network configuration, my needs are served. However, my Proxmox host is sorely deserving of an upgrade. Looking towards the future, I'd like to purchase a few terabytes of solid-state storage and configure ZFS in RAID 1, just in case something goes wrong. Further, I have a spare Nvidia GT 1030 I'd like to try to configure for GPU passthrough to improve the desktop performance for Windows guests — whether I can avoid the dreaded [error code 43](https://mathiashueber.com/fighting-error-43-nvidia-gpu-virtual-machine/) on Pascal architecture remains to be seen.
 
 As a student, I am not flush with money. Assuming that changed, I would like to build a powerful computer and virtualize everything off of it through Proxmox. In that sense, I suppose all-inclusive virtualization is my end goal.
-
----
-
-Sid Lacy  
-[Email](mailto:contact@swlacy.com?subject=Hello!) • [LinkedIn](https://www.linkedin.com/in/lacysw/) • [GitHub](https://github.com/lacysw)

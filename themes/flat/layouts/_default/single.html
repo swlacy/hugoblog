@@ -1,0 +1,16 @@
+{{ define "main" }}
+{{ partial "cat.html" . }}
+<h1>{{ .Title }}</h1>
+    {{- if not (.Param "hideMeta") }}
+        {{ partial "metadata.html" . }}
+    {{- end }}
+
+    {{- if not (.Param "hideTOC") }}
+        {{ partial "toc.html" . }}
+    {{- end }}
+<hr>
+{{ .Content | replaceRE "(<h[1-6]\\sid=\"([^\"]+)\"\\s?>)(.+)(</h[1-6]+>)" "${1}<a class=\"nodec\" href=\"#${2}\">${3}</a>${4}" | safeHTML }}
+{{- if not (.Param "hideFootnote") }}
+    {{ partial "footnote.html" . }}
+{{- end }}
+{{ end }}

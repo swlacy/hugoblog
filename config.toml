@@ -1,0 +1,40 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = "Sid's Blog"
+
+theme = 'flat'
+
+googleAnalytics = 'G-QFRYSRDLC1'
+
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+[markup]
+  [markup.highlight]
+    style = 'rrt'
+    tabWidth = 4
+
+[params]
+  author = 'Sid Lacy'
+  pathPrompt = 'sid@swlacy.com'
+
+  logo = '/media/logo.png'
+  headshot = '/media/headshot.png'
+
+  tagline = 'Hi, my name is Sid.'
+  subTagline = 'I ramble about security and technology.'
+
+  footerCopyrightName = 'Sid Lacy'
+  footerCopyrightLicense = 'CC BY 4.0'
+  footerCopyrightLicenseLink = 'https://creativecommons.org/licenses/by/4.0'
+  footerBuildTime = 'true'
+  footerAttributionLink = '/attribution'
+
+  showPath = 'true'
+
+[assets]
+  favicon = "favicon.ico"
+  favicon16x16 = "favicon-16x16.png"
+  favicon32x32 = "favicon-32x32.png"
+  apple_touch_icon = "apple-touch-icon.png"

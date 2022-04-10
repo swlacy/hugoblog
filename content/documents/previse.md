@@ -540,12 +540,6 @@ And there it is — the SYSTEM flag! The flag was accepted by HTB; thus, [Previs
 ## Conclusion
 This was a very fun CTF overall, which I admit I found challenging despite the low difficulty rating relative to other HTB challenges. I had a lot of fun working on Previse, and it felt noticeably more accessible to me than some other HTB machines I've attempted. I learned a lot and I encourage others interested in red team security activities to give their own best effort toward this challenge... even if they end up with 50+ open browser tabs at the end like I did.
 
-I hope you found this guide helpful or inspirational. Thank you so much for reading, and check back soon for more activity reports.
-
--Sid
-
 https://www.hackthebox.com/achievement/machine/787255/373
 
 ![https://www.hackthebox.com/achievement/machine/787255/373](/media/previse6.png)
-
-*Feedback? [I can be reached via email](mailto:contact@swlacy.com?subject=Previse%20Report).*

@@ -272,14 +272,3 @@ Cobalt Strike also supports webpage cloning, allowing not only for payload injec
 HelpSystems has provided no shortage of features with Cobalt Strike — that is indisputable. What I have shown here is only a small subset of Cobalt Strike's functionality, and I intend to expand on more of the possibilities in the future.
 
 While I believe it is important to provide penetration testers with polished toolsets, these sorts of applications — Metasploit and Burp Suite included — present a very low barrier to entry for the aspiring cybercriminal. I am not suggesting they should be removed by any means, but it is an important topic to think about. Modern red teaming utilities have evolved to such a degree, abstracting technical concepts, that even beginners have a shot at breaching or infecting corporate systems. It's an interesting debate, and ironic that criminals use the very tools we employ for protection as part of their attack frameworks.
-
-Thank you so much for reading!
-
----
-
-I am open to comments and criticism — I learn alongside you. Please, do not hesitate to [suggest an edit](mailto:contact@swlacy.com?subject=Blog%20Edit%20Suggestion).
-
----
-
-Sid Lacy  
-[Email](mailto:contact@swlacy.com?subject=Hello!) • [LinkedIn](https://www.linkedin.com/in/lacysw/) • [GitHub](https://github.com/lacysw)

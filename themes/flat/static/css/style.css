@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'Ubuntu Regular';
+    src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Ubuntu Medium';
+    src: url(../fonts/Ubuntu/Ubuntu-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Fira Code Regular';
+    src: url(../fonts/Fira/FiraCode-Regular.ttf);
+}
+
+
+:root {
+    --primary: #fdf1e7;
+    --secondary: blue;
+    --tertiary: green;
+    --quaternary: orange;
+
+    --background: #1b1b1e;
+    --mainbg: #1b1b1e;
+    --forground: #202126;
+    --header: #27282b;
+    --content: #afb0b1;
+    --buttons: #202126;
+    --links: #8ca88a;
+
+    --menuwidth: 112px;
+    --radius: 6px;
+    height: 100%;
+}
+
+html, body, .indexSidebar {
+    height: calc(100vh - 48px);
+    background-color: var(--background);
+}
+
+body {
+    margin: auto;
+    max-width: 1024px;
+}
+
+.shadow {
+    background-color: var(--mainbg);
+}
+
+#content {
+    margin-top: 48px;
+    min-height: calc(100vh - 82px);
+    padding: 10px;
+    font-family: 'Ubuntu Regular';
+    color: var(--content);
+}
+
+code {
+    font-family: 'Fira Code Regular';
+    color: #d63384;
+}
+a code {
+    color: #d63384;
+}
+
+.header {
+    z-index: 2;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    max-width: 1024px;
+    height: 40px;
+    background-color: var(--header);
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+}
+
+.nav {
+    background-color: var(--header);
+    max-width: 1024px;
+    font-size: 24px;
+    font-family: 'Ubuntu Regular';
+    height: inherit;
+    max-width: 1000px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+headerTitle {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    height: inherit;
+    min-width: 300px;
+    cursor: pointer
+}
+
+headerMenu {
+    all: inherit;
+    display: inline-block;
+    margin-left: auto;
+}
+
+.footer {
+    margin-top: auto;
+    font-size: 12px;
+    padding: 8px;
+    color: var(--content);
+}
+
+.dropbtn {
+    background-color: var(--header);
+    color: var(--content);
+    border: none;
+    height: 40px;
+    width: var(--menuwidth);
+}
+
+.dropdown-content {
+    width: var(--menuwidth);
+    font-size: 18px;
+    display: none;
+    position: fixed;
+    background-color: var(--header);
+    border-radius: var(--radius);
+    z-index: 3;
+}
+
+.dropdown-content a {
+    width: var(--menuwidth);
+    color: var(--content);
+    padding: 6px 4px;
+    text-decoration: none;
+    display: block;
+    background-color: var(--header);
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+}
+
+.dropdown-content a:hover {
+    font-size: 18px;
+    color: var(--content);
+    background-color: var(--buttons);
+    border-radius: var(--radius);
+    width: var(--menuwidth);
+}
+
+.dropdown:hover .dropdown-content {
+    width: var(--menuwidth);
+    display: block;
+    
+}
+
+.dropdown:hover .dropbtn {
+    background-color: var(--buttons);
+}
+
+a {
+    color: inherit;
+}
+
+.logo {
+    margin-top: -3px;
+    padding-right: 8px;
+}
+
+.meta {
+    font-size: 14px;
+}
+
+.path {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.profile {
+    display: flex;
+    margin: auto;
+    max-width: 504px;
+}
+
+.profile img {
+    max-width: 284px;
+    max-height: 284px;
+    border-radius: var(--radius);
+    border: solid 1px var(--content);
+    box-shadow: 0 1px;
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+a:hover {
+    color: var(--links);
+}
+
+blockquote {
+    margin: 20px 0;
+    padding: 0 16px;
+    border-inline-start: 3px solid var(--content);
+}
+
+pre {
+    padding: 12px;
+    border-radius: var(--radius);
+    background-color: black;
+    color: white;
+    font-family: 'Fira Code Regular';
+}
+
+p img {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    width: 100%;
+}
+
+.medium-zoom-image--opened {
+    z-index: 2;
+}
+
+.button-inner, div.toc {
+    display: grid;
+    flex-direction: column;
+    border-radius: var(--radius);
+    padding: 6px;
+    margin: 6px;
+    max-width: 340px;
+    text-decoration: none;
+}
+
+.front-page-buttons {
+    display: inline-block;
+    width: 284px;
+    height:284px;
+    margin: 36px;
+}
+
+.front-page-desc {
+    text-align: left !important;
+}
+
+div.toc {
+    max-width: 100%;
+    border: dotted 1px var(--content);
+    margin-top: 12px;
+    padding-left:12px;
+    padding-right:12px
+}
+
+.nodec {
+    text-decoration: none !important
+}

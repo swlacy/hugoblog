@@ -10,13 +10,14 @@ cover:
 hideMeta: true
 ShowBreadCrumbs: false
 ShowShareButtons: false
+hideFootnote: true
 ---
 
 {{< rawhtml >}}
-<img src="/media/headshot.png" alt="It's Me" style="margin: 0px 20px 0px 0px; max-width: 25%; float: left"/>
+<img src="/media/headshot.png" alt="It's Me" style="margin: 0px 12px 0px 0px; width: 40%; float: left; border-radius: var(--radius)"/>
 {{< /rawhtml >}}
 
-My name is Sid Lacy. I am a student at Western Washington University, double-majoring in cybersecurity and political science; I aspire to one day fill a role in my professional life that sees some intersection between the two. Currently, I also cohead and represent the [Western Washington University Cybersecurity Club](https://wwucyber.com) as a member of the Cybersecurity Department, working with my peers to spread awareness and discuss contemporary news related to cybersecurity, and to promote activity in security-related technical events.
+Hey there! My name is Sid Lacy. I am a student at Western Washington University, double-majoring in cybersecurity and political science; I aspire to one day fill a role in my professional life that sees some intersection between the two. Currently, I also cohead and represent the [Western Washington University Cybersecurity Club](https://wwucyber.com) as a member of the Cybersecurity Department, working with my peers to spread awareness and discuss contemporary news related to cybersecurity, and to promote activity in security-related technical events.
 
 In my free time, I write here, populating this site with posts on my [blog](/blog) and publishing articles in the [Documents section](/docs), both of which have a general emphasis on the study of computer security. My intention behind *swlacy.com* is two-sided: first, I use this space to enrich my knowledge, providing a more elegant, professional location to publish work, which I can tailor to my specific needs. Second, I aim for this space to be of equal use to others, to become a trove of information those interested in computer security can use to benefit from as well. Learning is for everyone — I appreciate your interest in my page, and I hope you find something here that intrigues or helps you in some capacity.
 
@@ -27,9 +28,16 @@ If you would like to reach out to me for any reason, you may easily do so via [e
 Thank you again for visiting!
 
 {{< rawhtml >}}
-<div style="max-width: 196px; float: right; margin-right: 16px">
+<div style="max-width: 196px; margin-right: 16px">
     Kind regards,
-    <img src="/media/sig2.png" style="margin-top: -10px; margin-bottom: -30px;"/>
+    <img src="/media/sig2.png" style="max-width: inherit; margin-top: -10px; margin-bottom: -30px;"/>
     Sid Lacy
+</div>
+<div class="socials">
+<br>
+    <a href="mailto:contact@swlacy.com?subject=Hello!"><i data-feather="mail" height="18px" style="margin-bottom: 2px; margin-right: 4px"></i>Email</a>
+    <a href="https://twitter.com/actuallysid"><i data-feather="twitter" height="18px" style="margin-bottom: 2px; margin-right: 4px; margin-left: 8px"></i>Twitter</a>
+    <a href="https://www.linkedin.com/in/lacysw/"><i data-feather="linkedin" height="18px" style="margin-bottom: 2px; margin-right: 4px; margin-left: 8px"></i>LinkedIn</a>
+    <a href="https://github.com/lacysw"><i data-feather="github" height="18px" style="margin-bottom: 2px; margin-right: 4px; margin-left: 8px"></i>GitHub</a>
 </div>
 {{< /rawhtml >}}

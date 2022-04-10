@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <div class="shadow">
+    {{- partial "head.html" . -}}
+    {{- partial "header.html" . -}}
+    <body>
+        <div id="content">
+        {{- block "main" . }}{{- end }}
+        </div>
+    </body>
+    </div>
+    {{- partial "footer.html" . -}}
+    {{- partial "script.html" . -}}
+</html>

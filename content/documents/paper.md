@@ -350,12 +350,6 @@ After attaining root access, I also attempted privilege escalation using [LinPEA
 
 Paper was a fun and simple CTF, and I extend my thanks towards the author, [secnigma](https://secnigma.wordpress.com/).
 
-I hope you found this guide helpful or inspirational. Thank you so much for reading, and check back soon for more posts!
-
--Sid
-
 https://www.hackthebox.com/achievement/machine/787255/432
 
 ![Proof of completion](/media/paper-completion.png)
-
-*Feedback? [I can be reached via email](mailto:contact@swlacy.com?subject=Paper%20Report).*

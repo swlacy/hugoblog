@@ -13,8 +13,6 @@ I was recently in the position to buy a new laptop, an essential tool ever since
 
 So, given the myriad of powerful workstation-class, portable x86 machines for sale, why did I eventually land on an ARM-powered MacBook with comparatively poor software and virtualization support as a cybersecurity student? My intention here is not to sell anyone on my decisions, and what works well for me may not for another user, even one with a similar workflow. However, if another student encounters this post, I'd like to share my thoughts and experiences using macOS for the first time after a lifetime of Windows and Linux; to provide the perspective I wish I could have been exposed to before making the jump.
 
-<!--truncate-->
-
 For the record, I purchased the [2020 M1 MacBook Air](https://support.apple.com/kb/SP825) for $976.31 after tax in early October of 2021, which is approximately three months before the publication of this post. I migrated all my work off of my Windows 10 desktop to the laptop shortly after its arrival — that way, I could transport my primary workstation between my house and my university campus.
 
 ## My Workflow
@@ -63,8 +61,3 @@ Package Power: 305 mW
 
 ## Conclusion
 I intend for this post to provide another perspective on using macOS as a user of Windows and Linux, especially as a cybersecurity student. Is the M1 platform a reasonable all-in-one solution for my work? Certainly not. Operating as a thin-client, offloading computationally expensive or incompatible tasks, however, makes the base-model MacBook an exceptional tool. Disregarding raw performance and application compatibility allows issues such as battery life, display quality, etc., to gain pertinence; in those respects, the MacBook excels.
-
----
-
-Sid Lacy  
-[Email](mailto:contact@swlacy.com?subject=Hello!) • [LinkedIn](https://www.linkedin.com/in/lacysw/) • [GitHub](https://github.com/lacysw)

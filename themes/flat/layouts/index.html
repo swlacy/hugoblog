@@ -1,0 +1,70 @@
+{{ define "main" }}
+<div>
+    <div id="home-jumbotron" class="jumbotron text-center">
+    <div class="profile">
+        <img src="{{ .Site.Params.headshot }}" alt="{{ .Site.Params.author }}"></img>
+    </div>
+        <h2><b>{{ .Site.Params.tagline }}</b></h2>
+        <i>{{ .Site.Params.subTagline }}</i>
+    </div>
+    <br>
+    <center>
+        <div>
+            <a class="button-inner front-page-buttons" href="/posts" rel="noopener" title="Blog Posts">
+                <svg style="width: 240px; height: 240px;" enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m405.86 66.555c-1.508-1.625-3.633-2.555-5.859-2.555h-304c-2.227 0-4.352 0.93-5.859 2.555-1.516 1.633-2.281 3.82-2.117 6.039l30.883 417.21c0.945 12.445 11.452 22.195 23.929 22.195h210.33c12.477 0 22.984-9.75 23.93-22.203l30.883-417.2c0.163-2.219-0.602-4.407-2.118-6.039z" fill="#5C546A"/><path d="m400 64h-152v448h105.16c12.477 0 22.984-9.75 23.93-22.203l30.883-417.2c0.164-2.219-0.602-4.406-2.117-6.039-1.509-1.625-3.634-2.555-5.86-2.555z" fill="#8B8996"/><polygon points="114.04 424 381.96 424 402.1 152 93.901 152" fill="#C27B58"/><polygon points="248 152 93.901 152 114.04 424 248 424" fill="#9F6459"/><path d="M88,56l25.009-44.348C117.346,4.423,125.158,0,133.589,0h228.823c8.43,0,16.242,4.423,20.58,11.652 L408,56" fill="#D8DCE1"/><circle cx="248" cy="288" r="72" fill="#FFD200"/><path d="m176 288c0 39.764 32.235 72 72 72v-144c-39.765 0-72 32.235-72 72z" fill="#FF9600"/><path d="M248,0H133.588c-8.43,0-16.242,4.423-20.58,11.652L88,56h160V0z" fill="#B9BBC1"/><path d="m424 80h-336c-8.837 0-16-7.163-16-16s7.163-16 16-16h336c8.837 0 16 7.163 16 16s-7.164 16-16 16z" fill="#8B8996"/><path d="m424 48h-176v32h176c8.836 0 16-7.164 16-16 0-8.837-7.164-16-16-16z" fill="#B9BBC1"/></svg>
+                <div class="front-page-desc">
+                    <br><h3>Blog Posts</h3>
+                    Check out my blog, which features a variety of (mostly) infosec-related personal publications.
+                </div>
+            </a>
+            <a class="button-inner front-page-buttons" href="/documents" rel="noopener" title="Documents">
+                <svg style="width: 240px; height: 240px" enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m416 0h-352c-8.82 0-16 7.176-16 16v448c0 8.82 7.18 16 16 16h352c8.82 0 16-7.18 16-16v-448c0-8.824-7.18-16-16-16z" fill="#B9BBC1"/><path d="m384 32h-352c-8.82 0-16 7.176-16 16v448c0 8.82 7.18 16 16 16h352c8.82 0 16-7.18 16-16v-448c0-8.824-7.18-16-16-16z" fill="#D8DCE1"/><path d="m328 120h-256c-4.422 0-8-3.582-8-8s3.578-8 8-8h256c4.422 0 8 3.582 8 8s-3.578 8-8 8z" fill="#5C546A"/><path d="m328 216h-256c-4.422 0-8-3.578-8-8s3.578-8 8-8h256c4.422 0 8 3.578 8 8s-3.578 8-8 8z" fill="#8B8996"/><path d="m328 440h-256c-4.422 0-8-3.578-8-8s3.578-8 8-8h256c4.422 0 8 3.578 8 8s-3.578 8-8 8z" fill="#B9BBC1"/><path d="m328 312h-256c-4.422 0-8-3.578-8-8s3.578-8 8-8h256c4.422 0 8 3.578 8 8s-3.578 8-8 8z" fill="#8B8996"/><path d="m136 152h-64c-4.422 0-8-3.582-8-8s3.578-8 8-8h64c4.422 0 8 3.582 8 8s-3.578 8-8 8z" fill="#5C546A"/><path d="m328 152h-160c-4.422 0-8-3.582-8-8s3.578-8 8-8h160c4.422 0 8 3.582 8 8s-3.578 8-8 8z" fill="#5C546A"/><path d="m264 184h-192c-4.422 0-8-3.578-8-8s3.578-8 8-8h192c4.422 0 8 3.578 8 8s-3.578 8-8 8z" fill="#8B8996"/><path d="m328 184h-32c-4.422 0-8-3.578-8-8s3.578-8 8-8h32c4.422 0 8 3.578 8 8s-3.578 8-8 8z" fill="#8B8996"/><path d="m328 408h-256c-4.422 0-8-3.578-8-8s3.578-8 8-8h256c4.422 0 8 3.578 8 8s-3.578 8-8 8z" fill="#B9BBC1"/><path d="m136 344h-64c-4.422 0-8-3.578-8-8s3.578-8 8-8h64c4.422 0 8 3.578 8 8s-3.578 8-8 8z" fill="#8B8996"/><path d="m328 344h-160c-4.422 0-8-3.578-8-8s3.578-8 8-8h160c4.422 0 8 3.578 8 8s-3.578 8-8 8z" fill="#B9BBC1"/><path d="m264 376h-192c-4.422 0-8-3.578-8-8s3.578-8 8-8h192c4.422 0 8 3.578 8 8s-3.578 8-8 8z" fill="#B9BBC1"/><path d="m328 376h-32c-4.422 0-8-3.578-8-8s3.578-8 8-8h32c4.422 0 8 3.578 8 8s-3.578 8-8 8z" fill="#B9BBC1"/><path d="m176 248h-104c-4.422 0-8-3.578-8-8s3.578-8 8-8h104c4.422 0 8 3.578 8 8s-3.578 8-8 8z" fill="#8B8996"/><path d="m328 248h-120c-4.422 0-8-3.578-8-8s3.578-8 8-8h120c4.422 0 8 3.578 8 8s-3.578 8-8 8z" fill="#8B8996"/><path d="m240 280h-168c-4.422 0-8-3.578-8-8s3.578-8 8-8h168c4.422 0 8 3.578 8 8s-3.578 8-8 8z" fill="#8B8996"/><path d="m328 280h-56c-4.422 0-8-3.578-8-8s3.578-8 8-8h56c4.422 0 8 3.578 8 8s-3.578 8-8 8z" fill="#8B8996"/><path d="M448,448l16.337,54.458c2.28,7.602,13.045,7.602,15.325,0L496,448H448z" fill="#8B8996"/><circle cx="472" cy="176" r="24" fill="#8B8996"/><rect x="448" y="176" width="48" height="272" fill="#FFD200"/><rect x="448" y="176" width="24" height="272" fill="#FF9600"/><path d="M457.6,480l6.737,22.458c2.28,7.602,13.045,7.602,15.325,0L486.4,480H457.6z" fill="#5C546A"/></svg>
+                <div class="front-page-desc">
+                    <br><h3>Documents</h3>
+                    Interested in more technical articles? Find HackTheBox write-ups here, among other posts.
+                </div>
+            </a>
+        </div>
+        <div>
+            <a class="button-inner front-page-buttons" href="/links" rel="noopener" title="Links">
+                <svg style="width: 240px; height: 240px;" enable-background="new 0 0 511.999 511.999" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m149.6 441.75 73.469-80-15.738-41.083s-47.333 6.667-48.667 10.667c-1.333 4-5.333 57.333-6 66.667-0.666 9.332-3.064 43.749-3.064 43.749" fill="#5C546A"/><path d="m509.76 38.45c-2.219-2.297-5.578-3.047-8.547-1.953l-496 184c-3.031 1.125-5.086 3.961-5.211 7.191s1.703 6.219 4.641 7.574l89.227 41.176c6.938 3.207 11.977 9.594 13.477 17.086l28.805 144.04c0.664 3.305 3.328 5.844 6.664 6.344 3.281 0.473 6.617-1.152 8.227-4.121l45.477-84.453c1.234-2.293 3.422-3.805 6-4.141 2.602-0.336 5.078 0.551 6.859 2.449l112.79 119.84c1.531 1.621 3.641 2.516 5.828 2.516 0.477 0 0.961-0.043 1.438-0.129 2.672-0.488 4.914-2.297 5.953-4.805l176-424c1.218-2.937 0.578-6.32-1.625-8.613z" fill="#B9BBC1"/><path d="m506.2 36.365-404.97 245.58c3.012 3.225 5.238 7.158 6.124 11.578l28.805 144.04c0.664 3.305 3.328 5.844 6.664 6.344 3.281 0.473 6.617-1.152 8.227-4.121l45.477-84.453c0.32-0.594 0.855-0.97 1.293-1.452 0.035-0.176 0.069-0.351 0.069-0.351l311.82-315.13c-0.989-1.004-2.207-1.665-3.504-2.038z" fill="#8B8996"/></svg>
+                <div class="front-page-desc">
+                    <br><h3>Contact</h3>
+                    Get in touch with me via email or social media — alternatively, view my profiles on several other platforms.
+                </div>
+            </a>
+            <a class="button-inner front-page-buttons" href="/about" rel="noopener" title="About Me">
+                <svg style="width: 277px; height:277px; margin-bottom: -24px;" enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m400.76 402.01-18.14-108.59h-0.053c-2.519-14.684-12.614-29.89-29.801-34.702-0.212-0.06-0.424-0.106-0.642-0.137l-42.323-6.351c-0.259-0.039-0.812-0.06-1.077-0.06-2.677 0-4.935 1.996-5.261 4.655-2.253 18.298-17.382 32.665-36.85 36.595h-21.241c-19.47-3.93-34.599-18.295-36.847-36.595-0.332-2.736-2.796-4.794-5.396-4.652-0.311-0.018-0.616 8e-3 -0.942 0.057l-42.323 6.351c-0.217 0.031-0.43 0.078-0.642 0.137-17.188 4.812-27.283 20.019-29.801 34.702h-0.053l-18.14 108.59c-3.753 19.719 11.365 37.988 31.438 37.988h226.66c20.073 0 35.19-18.269 31.434-37.988z" fill="#58332c"/><path d="m256 246.87c-18.52 0-35.322-7.947-47.719-20.791-9e-3 7.698-0.289 18.808-2.33 26.915 1.339 0.818 2.378 2.162 2.58 3.833 2.646 21.529 23.051 37.761 47.469 37.761 24.413 0 44.818-16.235 47.469-37.761 0.206-1.674 1.222-3.015 2.581-3.831-2.041-8.107-2.322-19.219-2.331-26.917-12.397 12.844-29.2 20.791-47.719 20.791z" fill="#FDC88E"/><path d="m302.68 227.06c-12.294 12.245-28.659 19.814-46.684 19.814-18.52 0-35.322-7.947-47.719-20.791-9e-3 7.698-0.289 18.808-2.33 26.915 1.339 0.818 2.378 2.162 2.58 3.833 1.17 9.516 5.817 17.989 12.74 24.491 31.923-4.496 68.155-36.018 81.413-54.262z" fill="#FFB980"/><path d="m303.72 114.32h-90.133c-14.617 0-26.51 11.893-26.51 26.51v31.812c0 40.929 30.921 74.227 68.925 74.227s68.925-33.298 68.925-74.227v-37.114c1e-3 -11.694-9.51-21.208-21.207-21.208z" fill="#FFE1B2"/><path d="m293.11 56h-68.925c-9.972 0-18.355 6.917-20.612 16.204-18.251 2.32-32.407 17.946-32.407 36.816v26.51c0 13.664 5.801 26.411 15.906 35.47v-30.168c0-14.617 11.893-26.51 26.51-26.51h90.133c11.696 0 21.208 9.514 21.208 21.208v35.464c10.107-9.057 15.906-21.804 15.906-35.464v-31.812c-1e-3 -26.311-21.406-47.718-47.719-47.718z" fill="#b38b67"/><path d="m352 440h-192c-4.418 0-8-3.582-8-8v-104c0-4.418 3.582-8 8-8h192c4.418 0 8 3.582 8 8v104c0 4.418-3.582 8-8 8z" fill="#D8DCE1"/>F<circle cx="256" cy="384" r="16" fill="#fff"/></svg>
+                <div class="front-page-desc">
+                    <br><h3>About Me</h3>
+                    More about me, my professional aspirations, and my goals with this site.
+                </div>
+            </a>
+        </div>
+    </center>
+    <br><br>
+</div>
+
+<!--
+<div style="max-width: 360px; margin: auto; padding-top: 32px;">
+    <center><h2>Featured Posts</h2></center><hr>
+
+    <h3><a href="/documents/paper">HackTheBox — Paper</a></h3>
+    February 13, 2022 · 9 Minute Read<br>
+    <i>Comprehensive walkthrough of the Paper machine on HackTheBox</i><br><br>
+
+    <h3><a href="/posts/playing-with-cobalt-strike">Playing With Cobalt Strike</a></h3>
+    February 11, 2022 · 10 Minute Read<br>
+    <i>Fun with Cobalt Strike v4.5</i><br><br>
+
+    <h3><a href="/posts/fishing-for-malware-1">Fishing for Malware Series</a></h3>
+    February 9, 2022 · 32 Minute Read · 5 Parts<br>
+    <i>Analysis of malicious external interactions with T-POT</i><br><br>
+
+    <h3><a href="/documents/previse">HackTheBox — Paper</a></h3>
+    December 22, 2021 · 14 Minute Read<br>
+    <i>Comprehensive walkthrough of the retired Previse machine on HackTheBox</i>
+</div>
+-->
+</div>
+{{ end }}

@@ -1,0 +1,9 @@
+<!-- https://victoria.dev/blog/add-search-to-hugo-static-sites-with-lunr -->
+
+<form id="search"
+    action='{{ with .GetPage "/search" }}{{.Permalink}}{{end}}' method="get">
+    <label hidden for="search-input">Search site</label>
+    <input type="text" id="search-input" name="query"
+    placeholder="Enter a search query">
+    <input type="submit" value="search">
+</form>
