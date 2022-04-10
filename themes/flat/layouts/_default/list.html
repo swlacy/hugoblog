@@ -4,9 +4,13 @@
 <hr>
 {{ range .Pages.ByPublishDate.Reverse }}
 <p style="margin-bottom: 20px">
-    <h3>➟ <a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <div class="button-inner" style="max-width: 100%">
+        <a href="{{ .RelPermalink }}" style="text-decoration: none;">
+    <h3>➟ {{ .Title }}</h3>
     {{ partial "metadata.html" . }}
     {{ .Summary }}
+        </a>
+</div>
 </p>
 {{ end }}
 {{ end }}
