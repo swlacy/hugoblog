@@ -32,9 +32,9 @@ Beyond security, I also enjoy hiking around the beautiful Pacific Northwest, sta
 
 *"Who cares what you have to say on this site anyway?"*
 
-Valid question — I appreciate skepticism and I do not claim to be a security expert by any means. Regardless, I believe that my academic experience and my (admittedly short) time in the IT/security industry is valuable and has provided me with the perspective needed to discuss topics related to security at large.
+Valid question — I appreciate skepticism and I do not claim to be a security expert by any means. Regardless, I believe that my academic experience and my (admittedly short) time in the IT/security industry are valuable and have provided me with the perspective needed to discuss topics related to security at large.
 
-### Expirence
+### Experience
 
 ##### June 2022 — Sept. 2022 (Incoming): Security Engineer Intern at Amazon
 
@@ -46,7 +46,7 @@ At WCC, I taught and assisted students with Computer Information Systems Departm
 
 ##### Sept. 2021 — Oct. 2021 (Short-Term Contract): IT Support Specialist at Anvil Corporation
 
-At Anvil Corporation, I used PowerShell and Quest KACE to automate network-based workstation re-imaging, improving deployment time metrics; performed hardware upgrades on workstations and servers to accelerate business-critical AutoCAD rendering processes; and carried out on-site network maintenance and inventory cataloging to ensure consistant remote, WFH employee access.
+At Anvil Corporation, I used PowerShell and Quest KACE to automate network-based workstation re-imaging, improving deployment time metrics; performed hardware upgrades on workstations and servers to accelerate business-critical AutoCAD rendering processes; and carried out on-site network maintenance and inventory cataloging to ensure consistent remote, WFH employee access.
 
 ### Education
 
