@@ -11,19 +11,54 @@ hideMeta: true
 ShowBreadCrumbs: false
 ShowShareButtons: false
 hideFootnote: true
+hideTOC: true
 ---
 
 {{< rawhtml >}}
-<img src="/media/headshot.png" alt="It's Me" style="margin: 0px 12px 0px 0px; width: 40%; float: left; border-radius: var(--radius)"/>
+<figure style="margin: 0px 12px 0px 0px; max-width: 30%; float: left; border-radius: var(--radius)">
+<img src="/media/fullbody.png" alt="It's Me" style="max-width: 100%;"/>
+<br><figcaption><i>Above: me, tired, post-CCDC<br>April 2, 2022</i></figcaption><br>
+</figure>
 {{< /rawhtml >}}
 
-Hey there! My name is Sid Lacy. I am a student at Western Washington University, double-majoring in cybersecurity and political science; I aspire to one day fill a role in my professional life that sees some intersection between the two. Currently, I also cohead and represent the [Western Washington University Cybersecurity Club](https://wwucyber.com) as a member of the Cybersecurity Department, working with my peers to spread awareness and discuss contemporary news related to cybersecurity, and to promote activity in security-related technical events.
+## Personal Background
+Hey there! My name is Sid Lacy. I am a student at Western Washington University, double-majoring in cybersecurity and political science; I aspire to one day fill a role in my professional life that sees some intersection between the two (hello, CISA?). Currently, I also cohead and represent the [Western Washington University Cybersecurity Club](https://wwucyber.com) as a member of the Cybersecurity Department, working with my peers to spread awareness and discuss contemporary news related to cybersecurity, and promoting activity in security-related technical events.
 
 In my free time, I write here, populating this site with posts on my [blog](/blog) and publishing articles in the [Documents section](/docs), both of which have a general emphasis on the study of computer security. My intention behind *swlacy.com* is two-sided: first, I use this space to enrich my knowledge, providing a more elegant, professional location to publish work, which I can tailor to my specific needs. Second, I aim for this space to be of equal use to others, to become a trove of information those interested in computer security can use to benefit from as well. Learning is for everyone — I appreciate your interest in my page, and I hope you find something here that intrigues or helps you in some capacity.
 
 Beyond security, I also enjoy hiking around the beautiful Pacific Northwest, staying up to date on international and domestic politics, and playing strategy games. While this site is not particularly dense in terms of posted content at the moment, regularly uploading new articles is a personal goal I have set for myself — if nothing interests you now, please revisit soon to see new submissions.
 
-If you would like to reach out to me for any reason, you may easily do so via [email](mailto:contact@swlacy.com?subject=Hello!). I would love to hear from you. Further, if you want to speak with me professionally, perhaps would you also like to see my [resume (PDF)](/resume) and connect with me on [LinkedIn](https://www.linkedin.com/in/lacysw/). The LaTeX source code is hosted on GitHub under [lacysw/resume](https://github.com/lacysw/resume/blob/main/resume.tex). Finally, the [Links section](/links) contains a comprehensive set of references to the remainder of my online services.
+## Professional Qualifications
+
+*"Who cares what you have to say on this site anyway?"*
+
+Valid question — I appreciate skepticism and I do not claim to be a security expert by any means. Regardless, I believe that my academic experience and my (admittedly short) time in the IT/security industry is valuable and has provided me with the perspective needed to discuss topics related to security at large.
+
+### Expirence
+
+##### June 2022 — Sept. 2022 (Incoming): Security Engineer Intern at Amazon
+
+I am an incoming member of the AWS security team.
+
+##### Oct. 2020 — Apr. 2022: Computer Information Systems Department Tutor at Whatcom Community College
+
+At WCC, I taught and assisted students with Computer Information Systems Department coursework, including Cisco CCNA prep, enterprise security fundamentals, Linux admin with Bash, OS architecture, and OOP with Java.
+
+##### Sept. 2021 — Oct. 2021 (Short-Term Contract): IT Support Specialist at Anvil Corporation
+
+At Anvil Corporation, I used PowerShell and Quest KACE to automate network-based workstation re-imaging, improving deployment time metrics; performed hardware upgrades on workstations and servers to accelerate business-critical AutoCAD rendering processes; and carried out on-site network maintenance and inventory cataloging to ensure consistant remote, WFH employee access.
+
+### Education
+
+##### Western Washington University
+RACE, POLITICS & PUBLIC POLICY; NEWSWRITING; CYBER WARFARE; COMPUTER SECURITY; REGIONAL EUROPEAN SOCIETY; TECHNICAL WRITING; CYBER PRIVACY; ETHICS & ABUSE; OPERATING SYSTEM CONCEPTS; INTRO: INTERNATIONAL RELATION; DATABASE CONCEPTS; COMPUTER SYSTEMS I; POLITICS OF LATIN AMERICA; PROBABILITY/STATISTICAL INFRNC; INTRO TO COMPARATIVE POLITICS; PHYSICS WITH CALCULUS II; CALCULUS II; PHYSICS WITH CALCULUS I; PERSONAL FINANCE; FORMAL LANG & FUNCTIONAL PROG.
+
+##### Whatcom Community College
+CALCULUS I; BUSINESS LAW; PRECALCULUS II; COMPUTER PROGRAMMING II; CISCO NETWORKING IV; INDUSTRIAL SYST SECURITY; PRECALCULUS I; CISCO NETWORKING III; NETWORK SECURITY II; COMPUTER PROGRAMMING I; CISCO NETWORKING II; NETWORK SECURITY I; INTRODUCTION TO HIKING; CISCO NETWORKING I; VIRTUALIZATION; CARDIOVASC CONDITION I; INTERMEDIATE ALGEBRA; US HISTORY III; COMPUTER SUPPORT I; US HISTORY II; COMPUTER OPERATE SYS II; INTRO COMPUTER SECURITY; AMERICAN GOVERNMENT; OPEN SOURCE OPERATE SYST; INTRO TO BUSINESS; INTRO TO AMERICAN LIT; CUSTOMER SERV-PROFESSION; HISTORY GRAPHIC DESIGN; ENGLISH COMPOSITION I; COMPUTER OPERATING SYS I; SURVEY OF ASTRONOMY.
+
+---
+
+If you would like to reach out to me for any reason, you may easily do so via [email](mailto:contact@swlacy.com?subject=Hello!). I would love to hear from you. Further, if you want to speak with me professionally, perhaps would you also like to see my [resume (PDF)](/resume) and connect with me on [LinkedIn](https://www.linkedin.com/in/lacysw/). The LaTeX source code is hosted on GitHub under [lacysw/resume](https://github.com/lacysw/resume/blob/main/resume.tex). Finally, the [Links section](/links) contains a comprehensive set of references for the remainder of my online services.
 
 Thank you again for visiting!
 
