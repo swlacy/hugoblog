@@ -348,7 +348,7 @@ div.toc {
     font-weight: 700;
 }
 
-/* FOUC prevention; must be at end */
+/* FOUC prevention */
 html {
     visibility: visible;
     opacity: 1;
