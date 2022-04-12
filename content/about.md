@@ -17,7 +17,7 @@ hideTOC: true
 {{< rawhtml >}}
 <figure style="margin: 0px 12px 0px 0px; max-width: 30%; float: left; border-radius: var(--radius)">
 <img src="/media/fullbody.png" alt="It's Me" style="max-width: 100%;"/>
-<br><figcaption><i>Above: me, exausted, post-CCDC<br>April 2, 2022</i></figcaption><br>
+<br><figcaption><i>Above: me, exhausted, post-CCDC<br>April 2, 2022</i></figcaption><br>
 </figure>
 {{< /rawhtml >}}
 
@@ -36,19 +36,21 @@ Valid question — I appreciate skepticism and I do not claim to be a security e
 
 #### Experience
 
-June 2022 — Sept. 2022 (Incoming): Security Engineer Intern at Amazon  
-Oct. 2020 — Apr. 2022: Computer Information Systems Department Tutor at Whatcom Community College  
-Sept. 2021 — Oct. 2021 (Short-Term Contract): IT Support Specialist at Anvil Corporation
+» June 2022 — Sept. 2022 (Incoming): Security Engineer Intern at Amazon  
+» Oct. 2020 — Apr. 2022: Computer Information Systems Department Tutor at WCC  
+» Sept. 2021 — Oct. 2021 (Short-Term Contract): IT Support Specialist at Anvil Corporation
 
 #### Education
 
-WWU: B.S. Cybersecurity (expected 2023)  
-WWU: B.A. Political Science (expected 2023)  
-WCC: A.S. Cybersecurity (graduated 2020)
+» Western Washington University: Bachelor of Science in Cybersecurity (expected 2023)  
+» Western Washington University: Bachelor of Arts in Political Science (expected 2023)  
+» Whatcom Community College: Associate of Science in Cybersecurity (graduated 2020)
 
 ---
 
-If you would like to reach out to me for any reason, you may easily do so via [email](mailto:contact@swlacy.com?subject=Hello!). I would love to hear from you. Further, if you want to speak with me professionally, perhaps would you also like to see my [resume (PDF)](/resume) and connect with me on [LinkedIn](https://www.linkedin.com/in/lacysw/). The LaTeX source code is hosted on GitHub under [lacysw/resume](https://github.com/lacysw/resume/blob/main/resume.tex). Finally, the [Links section](/links) contains a comprehensive set of references for the remainder of my online services. Thank you again for visiting!
+If you would like to reach out to me for any reason, you may easily do so via [email](mailto:contact@swlacy.com?subject=Hello!). I would love to hear from you. Further, if you want to speak with me professionally, perhaps would you also like to see my [resume (PDF)](/resume) and connect with me on [LinkedIn](https://www.linkedin.com/in/lacysw/). Finally, the [Links section](/links) contains a comprehensive set of references for the remainder of my online services.
+
+Thank you again for visiting!
 
 {{< rawhtml >}}
 <div style="max-width: 196px; margin-right: 16px">

@@ -72,6 +72,10 @@ a code {
     color: var(--inlineCode);
 }
 
+ul {
+    list-style-type: "» ";
+}
+
 ::selection {
     background: var(--links);
     color: var(--background)
