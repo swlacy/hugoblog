@@ -347,3 +347,9 @@ div.toc {
     font-size: 160px;
     font-weight: 700;
 }
+
+/* FOUC prevention; must be at end */
+html {
+    visibility: visible;
+    opacity: 1;
+}
