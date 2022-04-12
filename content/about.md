@@ -15,9 +15,9 @@ hideTOC: true
 ---
 
 {{< rawhtml >}}
-<figure style="margin: 0px 12px 0px 0px; max-width: 30%; float: left; border-radius: var(--radius)">
+<figure style="margin: 0px 12px 0px 0px; max-width: 30%; float: left; border-radius: ~var(--radius)">
 <img src="/media/fullbody.png" alt="It's Me" style="max-width: 100%;"/>
-<br><figcaption><i>Above: me, exhausted, post-CCDC<br>April 2, 2022</i></figcaption><br>
+<br><figcaption><center><i>Above: me</i><center></figcaption><br>
 </figure>
 {{< /rawhtml >}}
 
