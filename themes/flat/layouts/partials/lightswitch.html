@@ -1,0 +1,9 @@
+<!-- lightswitch script; minified from https://yonkov.github.io/post/add-dark-mode-toggle-to-hugo/ -->
+
+<div class="lightswitch">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+</div>
+
+<script>
+    var body=document.body,switcher=document.getElementsByClassName("lightswitch")[0];switcher.addEventListener("click",function(){this.classList.toggle("lightswitch--checked"),this.classList.add("lightswitch--focus"),this.classList.contains("lightswitch--checked")?(body.classList.add("dark-mode"),localStorage.setItem("darkMode","true")):(body.classList.remove("dark-mode"),setTimeout(function(){localStorage.removeItem("darkMode")},100))}),localStorage.getItem("darkMode")&&(switcher.classList.add("lightswitch--checked"),body.classList.add("dark-mode"));
+</script>

@@ -1,5 +1,5 @@
 {{- if (.Param "showPath") -}}
-<div class="path" style="font-family: 'Fira Code Regular';">
+<div class="path">
     {{- $url := replace .Parent.Permalink (printf "%s" .Site.BaseURL) "" }}
     {{- $lang_url := strings.TrimPrefix (printf "%s/" .Lang) $url -}}
 

@@ -1,3 +1,5 @@
+/* Fonts */
+
 @font-face {
     font-family: 'Ubuntu Regular';
     src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf);
@@ -13,54 +15,75 @@
     src: url(../fonts/Fira/FiraCode-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Fira Code Bold';
+    src: url(../fonts/Fira/FiraCode-Bold.ttf);
+}
+
+/* Color schemes */
 
 :root {
-    --primary: #fdf1e7;
-    --secondary: blue;
-    --tertiary: green;
-    --quaternary: orange;
-
-    --background: #1b1b1e;
-    --mainbg: #1b1b1e;
-    --forground: #202126;
-    --header: #27282b;
-    --content: #afb0b1;
-    --buttons: #202126;
-    --links: #8ca88a;
-
     --menuwidth: 112px;
     --radius: 6px;
-    height: 100%;
+    
+    --background: white;
+    --header: #f0f0f0;
+    --content: #111111;
+    --links: #E95420;
+    --inlineCode: #d63384;
 }
 
-html, body, .indexSidebar {
+.dark-mode {
+    --background: #1b1b1e;
+    --header: #27282b;
+    --content: #d8d8d8;
+    --links: #8ca88a;
+}
+/* Main */
+
+html, body {
     height: calc(100vh - 48px);
-    background-color: var(--background);
 }
 
-body {
-    margin: auto;
-    max-width: 1024px;
+svg {
+    color: inherit;
 }
 
-.shadow {
-    background-color: var(--mainbg);
+a {
+    color: inherit;
 }
 
-#content {
-    margin-top: 48px;
-    min-height: calc(100vh - 82px);
-    padding: 10px;
-    font-family: 'Ubuntu Regular';
-    color: var(--content);
+a:hover {
+    color: var(--links);
 }
 
 code {
-    font-family: 'Fira Code Regular';
-    color: #d63384;
+    font-family: 'Fira Code Bold';
+    color: var(--inlineCode);
 }
+
+p code {
+    font-family: 'Fira Code Bold';
+    color: var(--inlineCode);
+}
+
 a code {
-    color: #d63384;
+    color: var(--inlineCode);
+}
+
+::selection {
+    background: var(--links);
+    color: var(--background)
+}
+
+/* Header, nav bar */
+
+.headerTitle {
+    margin-right: 4px;
+}
+
+.headerTitle {
+    text-decoration: none !important;
 }
 
 .header {
@@ -70,41 +93,39 @@ a code {
     width: 100%;
     max-width: 1024px;
     height: 40px;
-    background-color: var(--header);
+    background-color: var(--header) !important;
     border-bottom-left-radius: var(--radius);
     border-bottom-right-radius: var(--radius);
 }
 
 .nav {
-    background-color: var(--header);
-    max-width: 1024px;
     font-size: 24px;
     font-family: 'Ubuntu Regular';
-    height: inherit;
-    max-width: 1000px;
     margin-left: 12px;
     margin-right: 12px;
 }
 
-headerTitle {
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
-    height: inherit;
-    min-width: 300px;
-    cursor: pointer
+.logo {
+    margin-bottom: 4px;
+    margin-right: 4px;
 }
 
-headerMenu {
+.home {
     all: inherit;
-    display: inline-block;
-    margin-left: auto;
+    cursor: pointer;
+    color: var(--content);
 }
 
-.footer {
-    margin-top: auto;
-    font-size: 12px;
-    padding: 8px;
+.sep {
+    color: var(--content);
+}
+
+.lightswitch {
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.lightswitch svg {
     color: var(--content);
 }
 
@@ -114,6 +135,10 @@ headerMenu {
     border: none;
     height: 40px;
     width: var(--menuwidth);
+}
+
+.dropbtn svg {
+    margin-bottom: 4px;
 }
 
 .dropdown-content {
@@ -126,21 +151,26 @@ headerMenu {
     z-index: 3;
 }
 
+.dropdown-items {
+    margin-bottom: 2px;
+    margin-left: 4px;
+    margin-right: 8px
+}
+
 .dropdown-content a {
     width: var(--menuwidth);
     color: var(--content);
     padding: 6px 4px;
     text-decoration: none;
     display: block;
-    background-color: var(--header);
-    border-bottom-left-radius: var(--radius);
-    border-bottom-right-radius: var(--radius);
+    background-color: inherit;
+    border-radius: inherit;
 }
 
 .dropdown-content a:hover {
     font-size: 18px;
-    color: var(--content);
-    background-color: var(--buttons);
+    color: var(--links);
+    background-color: inherit;
     border-radius: var(--radius);
     width: var(--menuwidth);
 }
@@ -151,17 +181,32 @@ headerMenu {
     
 }
 
+.dropdown {
+    margin-left: auto !important;
+}
+
 .dropdown:hover .dropbtn {
-    background-color: var(--buttons);
+    color: var(--links)
 }
 
-a {
-    color: inherit;
+/* Body */
+
+body {
+    margin: auto;
+    max-width: 1024px;
+    background-color: var(--background);
 }
 
-.logo {
-    margin-top: -3px;
-    padding-right: 8px;
+.shadow {
+    background-color: var(--background);
+}
+
+#content {
+    margin-top: 48px;
+    min-height: calc(100vh - 82px);
+    padding: 10px;
+    font-family: 'Ubuntu Regular';
+    color: var(--content);
 }
 
 .meta {
@@ -169,29 +214,10 @@ a {
 }
 
 .path {
+    font-family: 'Fira Code Bold';
+    color: var(--content);
     font-size: 14px;
     margin-bottom: 4px;
-}
-
-.profile {
-    display: flex;
-    margin: auto;
-    max-width: 504px;
-}
-
-.profile img {
-    max-width: 284px;
-    max-height: 284px;
-    border-radius: var(--radius);
-    border: solid 1px var(--content);
-    box-shadow: 0 1px;
-    margin: auto;
-    margin-top: 16px;
-    margin-bottom: 24px;
-}
-
-a:hover {
-    color: var(--links);
 }
 
 blockquote {
@@ -203,8 +229,8 @@ blockquote {
 pre {
     padding: 12px;
     border-radius: var(--radius);
-    background-color: black;
-    color: white;
+    background-color: black !important;
+    color: white !important;
     font-family: 'Fira Code Regular';
 }
 
@@ -229,6 +255,60 @@ p img {
     border: dotted 1px var(--content);
 }
 
+div.toc {
+    max-width: 100%;
+    border: dotted 1px var(--content);
+    margin-top: 12px;
+    padding-left:12px;
+    padding-right:12px
+}
+
+.lst {
+    margin-bottom: 26px
+}
+
+.fullwidth {
+    max-width: 100% !important;
+}
+
+.footnote a {
+    margin-right: 10px
+}
+
+.footnote svg {
+    margin-bottom: 2px;
+    margin-right: 4px
+}
+
+/* Footer */
+
+.footer {
+    margin-top: auto;
+    font-size: 12px;
+    padding: 8px;
+    color: var(--content);
+    font-size: 12px;
+}
+
+/* Front page */
+
+.profile {
+    display: flex;
+    margin: auto;
+    max-width: 504px;
+}
+
+.profile img {
+    max-width: 284px;
+    max-height: 284px;
+    border-radius: var(--radius);
+    border: solid 1px var(--content);
+    box-shadow: 0 1px;
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
 .front-page-buttons {
     display: inline-block;
     width: 284px;
@@ -241,17 +321,15 @@ p img {
     text-align: left !important;
 }
 
-div.toc {
-    max-width: 100%;
-    border: dotted 1px var(--content);
-    margin-top: 12px;
-    padding-left:12px;
-    padding-right:12px
+.nodec {
+    text-decoration: none
 }
 
-.nodec {
-    text-decoration: none !important
+.fpageitems {
+    margin-bottom: 4px;
 }
+
+/* 404 */
 
 .not-found {
     position: absolute;

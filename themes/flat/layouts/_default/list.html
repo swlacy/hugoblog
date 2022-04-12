@@ -3,9 +3,9 @@
 <h1>{{ .Title }}</h1>
 <hr>
 {{ range .Pages.ByPublishDate.Reverse }}
-<p style="margin-bottom: 20px">
-    <div class="button-inner" style="max-width: 100%">
-        <a href="{{ .RelPermalink }}" style="text-decoration: none;">
+<p class="lst">
+    <div class="button-inner fullwidth">
+        <a href="{{ .RelPermalink }}" class="nodec">
     <h3>➟ {{ .Title }}</h3>
     {{ partial "metadata.html" . }}
     {{ .Summary }}
