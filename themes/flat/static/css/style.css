@@ -334,6 +334,26 @@ div.toc {
     margin-bottom: 4px;
 }
 
+
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+#first, #second {
+    min-width:50%;
+}
+
+#second {
+    padding-top: 10px;
+}
+
+.metad {
+    padding-bottom: 4px;
+}
+
 /* 404 */
 
 .not-found {

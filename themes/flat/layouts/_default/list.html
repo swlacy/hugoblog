@@ -6,9 +6,9 @@
 <p class="lst">
     <div class="button-inner fullwidth">
         <a href="{{ .RelPermalink }}" class="nodec">
-    <h3>➟ {{ .Title }}</h3>
-    {{ partial "metadata.html" . }}
-    {{ .Summary }}
+            <h3>{{ .Title }}</h3>
+            <i class="metad">{{ partial "metadata.html" . }}</i>
+            {{ .Summary }}
         </a>
 </div>
 </p>
