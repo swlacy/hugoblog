@@ -3,7 +3,7 @@
     {{ if .IsHome }}
         <meta property="og:description" content="{{ .Site.Params.subTagline }}">
     {{ else }}
-        <meta property="og:image" content="{{ (.Params.cover.image) }}">
+        <meta property="og:image" content="{{ .Site.Params.baseURL }}/{{ (.Params.cover.image) }}">
     {{ end }}
 
 
