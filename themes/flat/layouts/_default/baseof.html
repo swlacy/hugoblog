@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html>
+    {{ if .IsHome }}
+        <meta property="og:description" content="{{ .Site.Params.subTagline }}">
+    {{ else }}
+        <meta property="og:image" content="{{ (.Params.cover.image) }}">
+    {{ end }}
+
+
+
+
     <div class="shadow">
     {{- partial "head.html" . -}}
     {{- partial "header.html" . -}}

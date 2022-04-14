@@ -384,7 +384,7 @@ One very interesting note is how Windows Defender actually *does* detect the pay
 
 ![Defender on Windows 10 detecting payload.exe](/media/playing-with-cobalt-strike-2-15.png)
 
-Asa it turns out, the answer is yes. Why is that, I wonder? Does the Microsoft security suite target different threats on different platforms? Perhaps that is a topic I will explore in the future. In any case, beacon connectivity was successful, allowing for a variety of different malicious actions, such as grabbing screenshots, killing processes, executing additional payloads, attempting elevation, and more.
+As it turns out, the answer is yes. Why is that, I wonder? Does the Microsoft security suite target different threats on different platforms? Perhaps that is a topic I will explore in the future. In any case, beacon connectivity was successful, allowing for a variety of different malicious actions, such as grabbing screenshots, killing processes, executing additional payloads, attempting elevation, and more.
 
 ![Screenshot of activity on victim.local](/media/playing-with-cobalt-strike-2-16.png)
 
