@@ -392,7 +392,7 @@ Asa it turns out, the answer is yes. Why is that, I wonder? Does the Microsoft s
 
 If this showcase was any indication, Cobalt Strike remains a powerful weapon in the arsenal of any red teamer, and I did not employ any of the advanced feature sets in my attack. The code I wrote to bypass Windows Defender today was trivial; paired with Cobalt Stike, it is a reminder of the low barrier of entry to the aspiring cybercriminal.
 
-Further, technical attacks like this can be realistically considered the most difficult end of cybercrime. Think, for instance, of the LAPSUS$ group, [the alleged leader of which is a 16-year-old from Oxford, England.](https://www.bbc.com/news/technology-60864283). *Screenshots below are from the [$LAPSUS Telegram channel](https://t.me/minsaudebr) taken in March 2022.*
+Further, technical attacks like this can be realistically considered the most difficult end of cybercrime. Think, for instance, of the LAPSUS$ group, [the alleged leader of which is a 16-year-old from Oxford, England](https://www.bbc.com/news/technology-60864283). *Screenshots below are from the [$LAPSUS Telegram channel](https://t.me/minsaudebr) taken in March 2022.*
 
 ![Screenshot 1 of Lapsus group chat](/media/playing-with-cobalt-strike-2-17.jpg)
 
