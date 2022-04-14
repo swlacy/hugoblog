@@ -1,0 +1,24 @@
+<!--
+Docusaurus-esque admonition boxes. Credit to dillonzq/LoveIt for syntax. In-line use:
+[[< admonition type=type_name >]]
+    Markdown content
+[[< /admonition >]]
+-->
+
+{{ $colors := dict "information" "#0000ff" }}
+{{ $colors  = dict "question" "#00ff00" | merge $colors }}
+{{ $colors  = dict "warning" "#ffff00" | merge $colors }}
+{{ $colors  = dict "danger" "#ff0000" | merge $colors }}
+
+{{ $type := .Get "type" }}
+{{ $ad_title := $type | title }}
+{{ $ad_color := (index $colors $type) }}
+
+<div class="admonitions">
+    <div class="admonitions-header" style="background-color: {{ $ad_color }}60">
+        {{ $ad_title }}
+    </div>
+    <div class="admonitions-content" style="background-color: {{ $ad_color }}30">
+        {{ .Inner | markdownify }}
+    </div>
+</div>

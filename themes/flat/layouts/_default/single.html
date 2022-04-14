@@ -8,7 +8,7 @@
 
     {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInSingle | default site.Params.cover.hidden }}
     {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
-    {{ with .Params.cover.caption }}<center><i style="margin-bottom: 4px">{{ . | markdownify }}</i></center>{{- end }}
+    {{ with .Params.cover.caption }}<center><i style="margin-bottom: 4px; font-size: 14px;">{{ . | markdownify }}</i></center>{{- end }}
 
     {{- if not (.Param "hideTOC") }}
         {{ partial "toc.html" . }}

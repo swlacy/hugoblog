@@ -231,6 +231,36 @@ blockquote {
     border-inline-start: 3px solid var(--content);
 }
 
+.admonitions {
+    border-radius: var(--radius);
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+.admonitions-header {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.admonitions-content {
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 16px;
+}
+
+.admonitions-content p {
+    margin-bottom: 0;
+}
+
 pre {
     padding: 12px;
     border-radius: var(--radius);
