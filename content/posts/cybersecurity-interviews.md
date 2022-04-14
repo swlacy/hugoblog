@@ -8,6 +8,10 @@ description: Common cybersecurity interview questions and answers, plus some tip
 summary: Common cybersecurity interview questions and answers, plus some tips
 date: 2022-03-16
 showtoc: true
+cover:
+    image: "/media/cybersecurity-interviews-cover.jpg"
+    alt: "@homajob, (Unsplash, 2016)"
+    caption: "@driaug, Unsplash"
 draft: false
 ---
 

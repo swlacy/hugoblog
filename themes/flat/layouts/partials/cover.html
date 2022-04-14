@@ -1,0 +1,10 @@
+<!-- adityatelange/hugo-PaperMod -->
+
+{{- with .cxt}}
+{{- if (and .Params.cover.image (not $.isHidden)) }}
+    {{- $alt := (.Params.cover.alt | default .Params.cover.caption | plainify) }}
+        <figure style="margin-bottom: 4px">
+            <img src="{{ (.Params.cover.image) }}" alt="{{ $alt }}" style="width: 100%; border-radius: var(--radius);">
+        </figure>
+    {{- end }}
+{{- end -}}

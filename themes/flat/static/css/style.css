@@ -243,6 +243,7 @@ p img {
     margin-top: 6px;
     margin-bottom: 6px;
     width: 100%;
+    border-radius: var(--radius);
 }
 
 .medium-zoom-image--opened {
@@ -297,21 +298,18 @@ div.toc {
 
 /* Front page */
 
-.profile {
-    display: flex;
-    margin: auto;
-    max-width: 504px;
-}
-
 .profile img {
     max-width: 284px;
     max-height: 284px;
     border-radius: var(--radius);
     border: solid 1px var(--content);
     box-shadow: 0 1px;
-    margin: auto;
     margin-top: 16px;
     margin-bottom: 24px;
+}
+
+.profile a {
+    margin: auto;
 }
 
 .front-page-buttons {
