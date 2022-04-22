@@ -34,8 +34,8 @@
 }
 
 .dark-mode {
-    --background: #1b1b1e;
-    --header: #27282b;
+    --background: #202124;
+    --header: #282c2f;
     --content: #d8d8d8;
     --links: #8ca88a;
 }
@@ -269,11 +269,13 @@ pre {
     font-family: 'Fira Code Regular';
 }
 
-p img {
+figure img, p img {
     margin-top: 6px;
     margin-bottom: 6px;
     width: 100%;
     border-radius: var(--radius);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+    background-color: var(--background);
 }
 
 .medium-zoom-image--opened {
@@ -360,6 +362,10 @@ div.toc {
 
 .fpageitems {
     margin-bottom: 4px;
+}
+
+.cards {
+    margin-bottom: 16px
 }
 
 

@@ -1,11 +1,11 @@
 <div id="home-jumbotron" class="jumbotron text-center">
     <h2><b>New Content</b></h2>
     <center>
+    <hr style="max-width: 327px">
 
     {{- range ( where site.RegularPages "Section" "in" (slice "posts" "documents") | first 3 ) }}
-    <hr style="max-width: 327px">
-    <div>
-        <a class="button-inner" style="text-align: left; border: none;" href="{{ .Permalink }}">
+    <div class="cards">
+        <a class="button-inner shadow" style="text-align: left; border: none;" href="{{ .Permalink }}">
             <h3>{{ .Title }}</h3>
             <i class="metad">{{ partial "metadata.html" . }}</i>
             {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInSingle | default site.Params.cover.hidden }}
