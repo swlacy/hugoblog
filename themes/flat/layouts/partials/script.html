@@ -5,7 +5,9 @@
   // Loader
   document.addEventListener('DOMContentLoaded', function () {
     const zooming = new Zooming({
-      bgColor: 'var(--background)'
+      bgColor: 'var(--background)',
+      scaleExtra: 1.5,
+      transitionDuration: 0.3
     })
 
     zooming.listen('.img-zoomable')
