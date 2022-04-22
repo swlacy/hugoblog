@@ -278,10 +278,6 @@ figure img, p img {
     background-color: var(--background);
 }
 
-.medium-zoom-image--opened {
-    z-index: 2;
-}
-
 .button-inner, div.toc {
     display: grid;
     flex-direction: column;

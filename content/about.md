@@ -14,8 +14,8 @@ hideTOC: true
 ---
 
 {{< rawhtml >}}
-<figure style="margin: 0px 12px 0px 0px; max-width: 30%; float: left; border-radius: var(--radius)">
-<img src="/media/fullbody.png" alt="It's Me" style="max-width: 100%;"/>
+<figure style="margin: 0px 12px 0px 0px; max-width: 30%; float: left; border-radius: var(--radius);">
+<img src="/media/fullbody.png" alt="It's Me" style="max-width: 100%; box-shadow: none !important;"/>
 <br><figcaption><center><i>Above: me</i><center></figcaption><br>
 </figure>
 {{< /rawhtml >}}
