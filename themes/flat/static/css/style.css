@@ -47,6 +47,10 @@
 
 /* Main */
 
+* {
+    transition: all .15s ease-in-out; 
+}
+
 html, body {
     height: calc(100vh - 48px);
 }
@@ -90,10 +94,9 @@ ul {
 
 .headerTitle {
     margin-right: 4px;
-}
-
-.headerTitle {
     text-decoration: none !important;
+    transition: none;
+
 }
 
 .header {
@@ -113,26 +116,34 @@ ul {
     font-family: 'Ubuntu Regular';
     margin-left: 12px;
     margin-right: 12px;
+    transition: none;
 }
 
 .logo {
     margin-bottom: 4px;
     margin-right: 4px;
+    transition: none;
+    transition: background-color .15s ease-in-out;
 }
 
 .home {
     all: inherit;
     cursor: pointer;
     color: var(--content);
+    transition: none;
+    transition: color .15s ease-in-out;
 }
 
 .sep {
     color: var(--content);
+    transition: none;
+    transition: color .15s ease-in-out;
 }
 
 .lightswitch {
     margin-left: 6px;
     cursor: pointer;
+    transition: none;
 }
 
 .lightswitch svg {
@@ -295,7 +306,6 @@ figure img, p img {
     text-decoration: none;
     border: solid 1px var(--borders) !important;
     background-color: var(--base);
-    transition: all .2s ease-in-out; 
 }
 
 
