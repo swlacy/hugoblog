@@ -47,6 +47,10 @@
 
 /* Main */
 
+* {
+    transition: all .15s ease-in-out; 
+}
+
 html, body {
     height: calc(100vh - 48px);
 }
@@ -415,12 +419,6 @@ div.toc {
     height: 80%;
     font-size: 160px;
     font-weight: 700;
-}
-
-/* Transitions */
-
-* {
-    transition: all .15s ease-in-out; 
 }
 
 /* FOUC prevention */
