@@ -23,23 +23,26 @@
 /* Color schemes */
 
 :root {
+    --pagewidth: 1024px;
     --menuwidth: 112px;
     --radius: 6px;
-    
+    --base: #f8f8f8;
     --background: white;
     --header: #f0f0f0;
     --content: #111111;
-    --links: #CC6600;
-    --shadowlinks: #CC660026;
-    --inlineCode: #c20041;
+    --borders: #C3C3C3;
+    --links: #E95420;
+    --inlineCode: #cc3064;
+    --shadow: rgba(0,0,0,.1);
 }
 
 .dark-mode {
+    --base: #212125;
     --background: #202124;
     --header: #282c2f;
     --content: #d8d8d8;
+    --borders: #494A4C;
     --links: #8ca88a;
-    --shadowlinks: #8ca88a26;
 }
 
 /* Main */
@@ -98,7 +101,7 @@ ul {
     position: fixed;
     top: 0px;
     width: 100%;
-    max-width: 1024px;
+    max-width: var(--pagewidth);
     height: 40px;
     background-color: var(--header) !important;
     border-bottom-left-radius: var(--radius);
@@ -200,12 +203,14 @@ ul {
 
 body {
     margin: auto;
-    max-width: 1024px;
-    background-color: var(--background);
+    max-width: var(--pagewidth);
+    background-color: var(--base);
 }
 
 .shadow {
     background-color: var(--background);
+    border-radius: var(--radius);
+    box-shadow: 0 .5rem 1rem var(--shadow) !important;
 }
 
 #content {
@@ -276,7 +281,7 @@ figure img, p img {
     margin-bottom: 6px;
     width: 100%;
     border-radius: var(--radius);
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+    box-shadow: 0 .5rem 1rem var(--shadow);
     background-color: var(--background);
 }
 
@@ -288,12 +293,15 @@ figure img, p img {
     margin: 6px;
     max-width: 340px;
     text-decoration: none;
-    border: dotted 1px var(--content);
+    border: solid 1px var(--borders) !important;
+}
+
+.button-inner {
+    box-shadow: 0 .5rem 1rem var(--shadow);
 }
 
 div.toc {
     max-width: 100%;
-    border: dotted 1px var(--content);
     margin-top: 12px;
     padding-left:12px;
     padding-right:12px
@@ -332,8 +340,8 @@ div.toc {
     max-width: 284px;
     max-height: 284px;
     border-radius: var(--radius);
-
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+    border: solid 1px var(--borders);
+    box-shadow: 0 .5rem 1rem var(--shadow) !important;
     margin-top: 16px;
     margin-bottom: 24px;
 }
@@ -384,10 +392,6 @@ div.toc {
 
 .metad {
     padding-bottom: 4px;
-}
-
-.button-inner.shadow:hover {
-    box-shadow: 0 .5rem 1rem var(--shadowlinks) !important;
 }
 
 /* 404 */
