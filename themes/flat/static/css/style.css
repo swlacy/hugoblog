@@ -296,10 +296,6 @@ figure img, p img {
     border: solid 1px var(--borders) !important;
 }
 
-.button-inner {
-    box-shadow: 0 .5rem 1rem var(--shadow);
-}
-
 div.toc {
     max-width: 100%;
     margin-top: 12px;

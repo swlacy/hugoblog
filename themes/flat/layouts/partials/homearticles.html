@@ -5,7 +5,7 @@
 
     {{- range ( where site.RegularPages "Section" "in" (slice "posts" "documents") | first 3 ) }}
     <div class="cards">
-        <a class="button-inner shadow" style="text-align: left; border: none;" href="{{ .Permalink }}">
+        <a class="button-inner" style="text-align: left; border: none;" href="{{ .Permalink }}">
             <h3>{{ .Title }}</h3>
             <i class="metad">{{ partial "metadata.html" . }}</i>
             {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInSingle | default site.Params.cover.hidden }}
