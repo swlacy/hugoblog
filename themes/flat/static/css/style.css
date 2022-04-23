@@ -47,10 +47,6 @@
 
 /* Main */
 
-* {
-    transition: all .15s ease-in-out; 
-}
-
 html, body {
     height: calc(100vh - 48px);
 }
@@ -116,34 +112,34 @@ ul {
     font-family: 'Ubuntu Regular';
     margin-left: 12px;
     margin-right: 12px;
-    transition: none;
+    transition: none !important;
 }
 
 .logo {
     margin-bottom: 4px;
     margin-right: 4px;
-    transition: none;
-    transition: background-color .15s ease-in-out;
+    transition: none !important;
+    transition: background-color .15s ease-in-out !important;
 }
 
 .home {
     all: inherit;
     cursor: pointer;
     color: var(--content);
-    transition: none;
-    transition: color .15s ease-in-out;
+    transition: none !important;
+    transition: color .15s ease-in-out !important;
 }
 
 .sep {
     color: var(--content);
-    transition: none;
-    transition: color .15s ease-in-out;
+    transition: none !important;
+    transition: color .15s ease-in-out !important;
 }
 
 .lightswitch {
     margin-left: 6px;
     cursor: pointer;
-    transition: none;
+    transition: none !important;
 }
 
 .lightswitch svg {
@@ -422,7 +418,14 @@ div.toc {
 }
 
 /* FOUC prevention */
+
 html {
     visibility: visible;
     opacity: 1;
+}
+
+/* Transitions */
+
+* {
+    transition: all .15s ease-in-out; 
 }
