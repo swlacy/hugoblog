@@ -386,7 +386,7 @@ div.toc {
     padding-bottom: 4px;
 }
 
-.button-inner.shadow:hover, .profile.img:hover {
+.button-inner.shadow:hover {
     box-shadow: 0 .5rem 1rem var(--shadowlinks) !important;
 }
 
