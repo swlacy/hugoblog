@@ -29,8 +29,9 @@
     --background: white;
     --header: #f0f0f0;
     --content: #111111;
-    --links: #E95420;
-    --inlineCode: #d63384;
+    --links: #990033;
+    --shadowlinks: #99003326;
+    --inlineCode: #990033;
 }
 
 .dark-mode {
@@ -38,6 +39,7 @@
     --header: #282c2f;
     --content: #d8d8d8;
     --links: #8ca88a;
+    --shadowlinks: #8ca88a26;
 }
 
 /* Main */
@@ -330,8 +332,8 @@ div.toc {
     max-width: 284px;
     max-height: 284px;
     border-radius: var(--radius);
-    border: solid 1px var(--content);
-    box-shadow: 0 1px;
+
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
     margin-top: 16px;
     margin-bottom: 24px;
 }
@@ -382,6 +384,10 @@ div.toc {
 
 .metad {
     padding-bottom: 4px;
+}
+
+.button-inner.shadow:hover, .profile.img:hover {
+    box-shadow: 0 .5rem 1rem var(--shadowlinks) !important;
 }
 
 /* 404 */
