@@ -26,22 +26,22 @@
     --pagewidth: 1024px;
     --menuwidth: 112px;
     --radius: 6px;
-    --base: #f8f8f8;
-    --background: white;
-    --header: #f0f0f0;
-    --content: #111111;
-    --borders: #C3C3C3;
-    --links: #E95420;
-    --inlineCode: #cc3064;
+
     --shadow: rgba(0,0,0,.1);
+    --inlineCode: #cf3161;
+
+    --base: #e8e8e8;
+    --background: #f0f0f0;
+    --content: #181818;
+    --borders: #c0c0c0;
+    --links: #e95420;
 }
 
 .dark-mode {
-    --base: #212125;
-    --background: #202124;
-    --header: #282c2f;
-    --content: #d8d8d8;
-    --borders: #494A4C;
+    --base: #181818;
+    --background: #101010;
+    --content: #e8e8e8;
+    --borders: #404040;
     --links: #8ca88a;
 }
 
@@ -103,7 +103,7 @@ ul {
     width: 100%;
     max-width: var(--pagewidth);
     height: 40px;
-    background-color: var(--header) !important;
+    background-color: var(--background) !important;
     border-bottom-left-radius: var(--radius);
     border-bottom-right-radius: var(--radius);
 }
@@ -140,7 +140,7 @@ ul {
 }
 
 .dropbtn {
-    background-color: var(--header);
+    background-color: var(--background);
     color: var(--content);
     border: none;
     height: 40px;
@@ -156,7 +156,7 @@ ul {
     font-size: 18px;
     display: none;
     position: fixed;
-    background-color: var(--header);
+    background-color: var(--base);
     border-radius: var(--radius);
     z-index: 3;
 }
@@ -294,6 +294,13 @@ figure img, p img {
     max-width: 340px;
     text-decoration: none;
     border: solid 1px var(--borders) !important;
+    background-color: var(--base);
+    transition: all .2s ease-in-out; 
+}
+
+
+.button-inner:hover {
+    transform: scale(1.02);
 }
 
 div.toc {
