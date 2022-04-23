@@ -417,15 +417,15 @@ div.toc {
     font-weight: 700;
 }
 
+/* Transitions */
+
+* {
+    transition: all .15s ease-in-out; 
+}
+
 /* FOUC prevention */
 
 html {
     visibility: visible;
     opacity: 1;
-}
-
-/* Transitions */
-
-* {
-    transition: all .15s ease-in-out; 
 }
