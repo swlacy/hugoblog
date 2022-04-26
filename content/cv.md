@@ -6,6 +6,7 @@ ShowReadingTime: false
 ShowBreadCrumbs: false
 author: [""]
 hideMeta: true
+hideShare: true
 hideFootnote: true
 ---
 

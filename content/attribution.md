@@ -2,7 +2,7 @@
 title: Attribution
 hideMeta: true
 ShowBreadCrumbs: false
-ShowShareButtons: false
+hideShare: true
 hideFootnote: true
 ---
 
@@ -11,7 +11,7 @@ I would neither be able to create nor maintain this website without the hard wor
  - SSG: [Hugo](https://gohugo.io)
  - Theme: my own Hugo theme, which I have not determined a name for yet
  - Image zoom: [Zooming](https://kingdido999.github.io/zooming/)
- - SVG icons: [Feather](https://feathericons.com)
+ - SVG icons: [Feather](https://feathericons.com); [FontAwesome v6](https://fontawesome.com)
  - Front page SVGs: [SVG Repo Collection: *Color Startups And New Business Vectors*](https://www.svgrepo.com/collection/color-startups-and-new-business)
 
 The source code of this website and all related assets can be found on GitHub under [lacysw/hugoblog](https://github.com/lacysw/hugoblog).

@@ -7,6 +7,7 @@ ShowBreadCrumbs: false
 author: [""]
 hideMeta: true
 hideFootnote: true
+hideShare: true
 ---
 
 {{< rawhtml >}}

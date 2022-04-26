@@ -10,6 +10,7 @@ hideMeta: true
 ShowBreadCrumbs: false
 ShowShareButtons: false
 hideFootnote: true
+hideShare: true
 hideTOC: true
 ---
 

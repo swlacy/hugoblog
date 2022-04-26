@@ -4,7 +4,10 @@
     {{- if not (.Param "hideMeta") }}
         {{ partial "metadata.html" . }}
     {{- end }}
-    <p></p>
+
+    {{- if not (.Param "hideShare") }}
+        {{ partial "share.html" . }}
+    {{- end }}
 
     {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInSingle | default site.Params.cover.hidden }}
     {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
@@ -15,7 +18,13 @@
     {{- end }}
 <hr>
 {{ .Content | replaceRE "(<h[1-6]\\sid=\"([^\"]+)\"\\s?>)(.+)(</h[1-6]+>)" "${1}<a class=\"nodec\" href=\"#${2}\">${3}</a>${4}" | safeHTML }}
+
+{{- if not (.Param "hideShare") }}
+    {{ partial "share.html" . }}
+{{- end }}
+
 {{- if not (.Param "hideFootnote") }}
     {{ partial "footnote.html" . }}
 {{- end }}
+
 {{ end }}
