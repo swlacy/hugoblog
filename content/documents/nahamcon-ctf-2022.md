@@ -10,7 +10,7 @@ cover:
 
 Last week, I had the pleasure of participating in the 2022 NahamCon CTF, created and supported by the hard work of [@NahamSec](https://twitter.com/NahamSec), [@/_JohnHammond](https://twitter.com/_JohnHammond), and so many others — it was a blast. I competed on behalf of Western Washington University, and I am especially pleased with our performance; as shown in the cover photo, we scored in the top one percent of all teams.
 
-Overall, the event was a profound learning experience, so why not pay that forward? This post contains writeups of the some of the simple challenges personally completed during NahamCon CTF 2022.
+Overall, the event was a profound learning experience, so why not pay that forward? This post contains writeups of the some of the simple challenges personally completed during NahamCon CTF 2022, including *Dweeno*, *Unimod*, *Cereal*, *Mobilize*, *Jurrasic Park*, and *EXtravagant*.
 
 Looking for writeups of other NahamCon CTF 2022 challenges? See [my teammate's blog page](https://nburns.tech/blog/nahamcon_ctf_22)!
 
