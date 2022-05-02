@@ -383,7 +383,16 @@ div.toc {
 
 }
 #first, #second {
-    min-width:50%;
+    min-width:49.5%;
+}
+
+.sepbar {
+    margin: auto;
+    height: 1280px;
+    width: 1px;
+    left: 50%;
+    display: block;
+    background-color: var(--borders)
 }
 
 #second {
@@ -392,6 +401,12 @@ div.toc {
 
 .metad {
     padding-bottom: 4px;
+}
+
+@media only screen and (max-width: 760px) {
+    .sepbar {
+        display: none !important;
+    }
 }
 
 /* 404 */

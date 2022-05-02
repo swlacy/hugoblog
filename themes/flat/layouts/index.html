@@ -2,16 +2,18 @@
 <div id="wrapper">
     <div id="first">
         {{- partial "homeinfo.html" . -}}
+        <br>
     </div>
+    <div class="sepbar"></div>
     <div id="second">
         {{- partial "homearticles.html" . -}}
     </div>
-    <div>
-        <br>
-        <center>
-            <h5>Share this site!</h5>
-            {{- partial "share.html" . -}}
-        </center>
-    </div>
+</div>
+<div>
+    <br>
+    <center>
+        <h5>Share this site!</h5>
+        {{- partial "share.html" . -}}
+    </center>
 </div>
 {{ end }}
