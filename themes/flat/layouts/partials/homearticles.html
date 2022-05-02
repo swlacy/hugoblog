@@ -3,7 +3,7 @@
     <center>
     <hr style="max-width: 327px; margin-bottom: 22px">
 
-    {{- range ( where site.RegularPages "Section" "in" (slice "posts" "documents") | first 3 ) }}
+    {{- range ( where site.RegularPages "Section" "in" (slice "posts" "documents" "tutorials") | first 3 ) }}
     <div class="cards">
         <a class="button-inner" style="text-align: left; border: none;" href="{{ .Permalink }}">
             <h3>{{ .Title }}</h3>
