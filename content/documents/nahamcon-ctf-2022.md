@@ -12,7 +12,7 @@ Last week, I had the pleasure of participating in the 2022 NahamCon CTF, created
 
 Overall, the event was a profound learning experience, so why not pay that forward? This post contains writeups of the some of the simple challenges personally completed during NahamCon CTF 2022, including *Dweeno*, *Unimod*, *Cereal*, *Mobilize*, *Jurrasic Park*, and *EXtravagant*.
 
-Looking for writeups of other NahamCon CTF 2022 challenges? See [my teammate's blog page](https://nburns.tech/blog/nahamcon_ctf_22)!
+Looking for writeups of other NahamCon CTF 2022 challenges? See [my teammate's blog page](https://nburns.tech/docs/CTFs/NahamCon_2022/Intro)!
 
 ## Dweeno (Hardware)
 
