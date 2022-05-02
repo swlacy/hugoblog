@@ -4,7 +4,7 @@
 </div>
 
 {{ $scratch := newScratch }}
-{{- range ( where site.RegularPages "Section" "in" (slice "posts" "documents") ) }}
+{{- range ( where site.RegularPages "Section" "in" (slice "posts" "documents" "tutorials" "tutorials") ) }}
 {{ $scratch.Add "wordcount" .WordCount }}
 {{ end }}
 
@@ -12,7 +12,7 @@
 {{ $scratch.Get "wordcount" | lang.NumFmt 0 }} words (~{{ div ($scratch.Get "wordcount") 12780.0 | lang.NumFmt 1 }} hours<a class="nodec" href="https://scholarwithin.com/average-reading-speed#adult-average-reading-speed">*</a>) across {{ len (where .Site.RegularPages "Section" "!=" "") }} articles
 <hr>
 
-{{- range ( where site.RegularPages "Section" "in" (slice "posts" "documents") ) }}
+{{- range ( where site.RegularPages "Section" "in" (slice "posts" "documents" "tutorials") ) }}
     <a style="text-decoration: none; font-family: 'Fira Code Regular';;" href="{{ .Permalink }}">
         →
         {{ $dateFormat := .Site.Params.dateFormat | default "2006-01-02" }}
