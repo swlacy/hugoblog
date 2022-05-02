@@ -7,7 +7,7 @@
     <div class="cards">
         <a class="button-inner" style="text-align: left; border: none;" href="{{ .Permalink }}">
             <h3>{{ .Title }}</h3>
-            <i class="metad">{{ partial "metadata.html" . }}</i>
+            <metatext class="metad">{{ partial "metadata.html" . }}</metatext>
             {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInSingle | default site.Params.cover.hidden }}
             {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
             {{ .Summary }}

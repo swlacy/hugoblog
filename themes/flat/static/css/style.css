@@ -222,6 +222,12 @@ body {
     font-size: 14px;
 }
 
+.meta svg {
+    height: 14px;
+    width: 14px;
+    padding-bottom: 2px;
+}
+
 .path {
     font-family: 'Fira Code Bold';
     color: var(--content);
@@ -268,8 +274,10 @@ blockquote {
 pre {
     padding: 12px;
     border-radius: var(--radius);
-    background-color: black !important;
-    color: white !important;
+    background-color: var(--base) !important;
+}
+pre code {
+    color: var(--content) !important;
     font-family: 'Fira Code Regular';
 }
 

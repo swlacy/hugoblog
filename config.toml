@@ -12,7 +12,7 @@ googleAnalytics = 'G-QFRYSRDLC1'
 
 [markup]
   [markup.highlight]
-    style = 'rrt'
+    style = 'solarized-dark256'
     tabWidth = 4
 
 [params]
