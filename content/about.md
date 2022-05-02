@@ -7,8 +7,6 @@ cover:
     alt: "Crater Lake, OR; captured by me in the summer of 2021"
     caption: "Crater Lake, OR; captured by me in the summer of 2021"
 hideMeta: true
-ShowBreadCrumbs: false
-ShowShareButtons: false
 hideFootnote: true
 hideShare: true
 hideTOC: true

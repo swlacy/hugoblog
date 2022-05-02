@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div class="path">
+    <a href="/">~</a> $ tar -tf archive
+</div>
+
+{{ $scratch := newScratch }}
+{{- range ( where site.RegularPages "Section" "in" (slice "posts" "documents") ) }}
+{{ $scratch.Add "wordcount" .WordCount }}
+{{ end }}
+
+<h1>{{ .Title }}</h1>
+{{ $scratch.Get "wordcount" | lang.NumFmt 0 }} words across {{ len (where .Site.RegularPages "Section" "!=" "") }} articles
+<hr>
+
+{{- range ( where site.RegularPages "Section" "in" (slice "posts" "documents") ) }}
+    <a style="text-decoration: none; font-family: 'Fira Code Regular';;" href="{{ .Permalink }}">
+        →
+        {{ $dateFormat := .Site.Params.dateFormat | default "2006-01-02" }}
+        {{ .PublishDate.Format $dateFormat }}
+        ::
+        {{ .Title }}
+    </a>
+    <br>
+{{ end }}
+
+{{ end }}
