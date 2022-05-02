@@ -9,7 +9,7 @@
 {{ end }}
 
 <h1>{{ .Title }}</h1>
-{{ $scratch.Get "wordcount" | lang.NumFmt 0 }} words across {{ len (where .Site.RegularPages "Section" "!=" "") }} articles
+{{ $scratch.Get "wordcount" | lang.NumFmt 0 }} words (~{{ div ($scratch.Get "wordcount") 12780.0 | lang.NumFmt 1 }} hours<a class="nodec" href="https://scholarwithin.com/average-reading-speed#adult-average-reading-speed">*</a>) across {{ len (where .Site.RegularPages "Section" "!=" "") }} articles
 <hr>
 
 {{- range ( where site.RegularPages "Section" "in" (slice "posts" "documents") ) }}
