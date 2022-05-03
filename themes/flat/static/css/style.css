@@ -423,6 +423,9 @@ input {
     border-radius: var(--radius);
     color: var(--content);
     background-color: var(--base);
+    border-style: solid;
+    border-color: var(--borders);
+    font-family: 'Fira Code Regular';
 }
 
 input:focus {
