@@ -4,4 +4,5 @@
         {{- if (.Site.Params.footerBuildTime) }} • Last Built {{ now.UTC.Format "2006" }}.{{ now.UTC.Format "01" }}.{{ now.UTC.Format "02" }} UTC {{ end }}
         {{- if (.Site.Params.footerAttributionLink) }} • <a href="{{ .Site.Params.footerAttributionLink }}">Attribution</a> {{ end }}
     </i></span>
+    {{ partial "search-index.html" . }}
 </footer>

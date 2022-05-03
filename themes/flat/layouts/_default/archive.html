@@ -14,7 +14,7 @@
 
 {{- range ( where site.RegularPages "Section" "in" (slice "posts" "documents" "tutorials") ) }}
     <p>
-        <a style="text-decoration: none; font-family: 'Fira Code Regular';;" href="{{ .Permalink }}">
+        <a style="text-decoration: none; font-family: 'Fira Code Regular';" href="{{ .Permalink }}">
             -rw-r--r-- 1
             {{ with .Site.Params.footerCopyrightName }}
                 {{ index (split . " ") 0 }}
