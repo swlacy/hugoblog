@@ -34,15 +34,15 @@ Valid question — I appreciate skepticism and I do not claim to be a security e
 
 #### Experience
 
-» June 2022 — Sept. 2022 (Incoming): Security Engineer Intern at Amazon  
-» Oct. 2020 — Apr. 2022: Computer Information Systems Department Tutor at WCC  
-» Sept. 2021 — Oct. 2021 (Short-Term Contract): IT Support Specialist at Anvil Corporation
+⤷ June 2022 — Sept. 2022 (Incoming): Security Engineer Intern at Amazon  
+⤷ Oct. 2020 — Apr. 2022: Computer Information Systems Department Tutor at WCC  
+⤷ Sept. 2021 — Oct. 2021 (Short-Term Contract): IT Support Specialist at Anvil Corporation
 
 #### Education
 
-» Western Washington University: Bachelor of Science in Cybersecurity (expected 2023)  
-» Western Washington University: Bachelor of Arts in Political Science (expected 2023)  
-» Whatcom Community College: Associate of Science in Cybersecurity (graduated 2020)
+⤷ Western Washington University: Bachelor of Science in Cybersecurity (expected 2023)  
+⤷ Western Washington University: Bachelor of Arts in Political Science (expected 2023)  
+⤷ Whatcom Community College: Associate of Science in Cybersecurity (graduated 2020)
 
 ---
 
