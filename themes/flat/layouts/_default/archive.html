@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div class="path">
-    <a href="/">~</a> $ tar -tf archive
+    <a href="/">~</a> $ tar -tvf Archive.tar
 </div>
 
 {{ $scratch := newScratch }}
@@ -13,14 +13,19 @@
 <hr>
 
 {{- range ( where site.RegularPages "Section" "in" (slice "posts" "documents" "tutorials") ) }}
-    <a style="text-decoration: none; font-family: 'Fira Code Regular';;" href="{{ .Permalink }}">
-        →
-        {{ $dateFormat := .Site.Params.dateFormat | default "2006-01-02" }}
-        {{ .PublishDate.Format $dateFormat }}
-        ::
-        {{ .Title }}
-    </a>
-    <br>
+    <p>
+        <a style="text-decoration: none; font-family: 'Fira Code Regular';;" href="{{ .Permalink }}">
+            -rw-r--r-- 1
+            {{ with .Site.Params.footerCopyrightName }}
+                {{ index (split . " ") 0 }}
+            {{ end }}
+            {{ $dateFormat := .Site.Params.dateFormat | default "Jan 02 2006" }}
+            {{ .PublishDate.Format $dateFormat }}
+            {{ printf "%04d" .WordCount }}&nbsp;&nbsp;&nbsp;
+            {{ .Section }}/{{ .Title }}
+        </a>
+    </p>
+
 {{ end }}
 
 {{ end }}
