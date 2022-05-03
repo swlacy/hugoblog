@@ -26,7 +26,7 @@ window.store = {
 function displayResults (results, store) {
 const searchResults = document.getElementById('results')
 if (results.length) {
-    let resultList = '<p><b>The following pages contain one or more queried phrases...</b></p>'
+    let resultList = '<p><b>The following pages contain one or more of the queried phrase(s)...</b></p>'
     // Iterate and build result list elements
     for (const n in results) {
     const item = store[results[n].ref]
