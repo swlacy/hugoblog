@@ -1,7 +1,21 @@
 <!-- CREDIT: https://victoria.dev/blog/add-search-to-hugo-static-sites-with-lunr -->
 
+
+
 <form id="search"
     action='{{ with .GetPage "/search" }}{{.Permalink}}{{end}}' method="get">
+    <p>
+        Search for one or more strings contained in the body of this site, space delineated.
+        <ul>
+            <li>Fuzzyness: <code>foo~1</code> will return articles containing "foo" exactly and all permutations of "foo" within a one-char difference (e.g. "foz")</li>
+            <li>Wildcards: <code>bar*</code> will return articles containing "bar" and any subsequent character(s)</li>
+            <li>Title tags: <code>title:baz</code> will return articles containing "baz" in their titles</li>
+            <li>Operators: <code>+quux -xyzzy</code> will return articles containing "quux" but not "xyzzy"</li>
+            <li>Weights: <code>corge^10 grault^2</code> will return articles containing "corge" and/or "grault" but "corge" will have 5x relevance</li>
+        </ul>
+    </p>
+    <br>
+
     <label hidden for="search-input">Search site</label>
     <input type="text" id="search-input" name="query"
     placeholder="What are you looking for?">

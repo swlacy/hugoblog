@@ -24,7 +24,7 @@
 
 :root {
     --pagewidth: 1024px;
-    --menuwidth: 112px;
+    --menuwidth: 114px;
     --radius: 6px;
 
     --shadow: rgba(0,0,0,.1);
@@ -128,8 +128,9 @@ ul {
 }
 
 .lightswitch {
-    margin-left: 6px;
+    margin-left: 4px;
     cursor: pointer;
+    width: 30px;
 }
 
 .lightswitch svg {
@@ -141,7 +142,8 @@ ul {
     color: var(--content);
     border: none;
     height: 40px;
-    width: var(--menuwidth);
+    width: 30px;
+    margin-right: 8px;
 }
 
 .dropbtn svg {
