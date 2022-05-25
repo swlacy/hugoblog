@@ -97,12 +97,10 @@ ul {
     z-index: 2;
     position: fixed;
     top: 0px;
+    left: 0px;
     width: 100%;
-    max-width: var(--pagewidth);
     height: 40px;
     background-color: var(--background) !important;
-    border-bottom-left-radius: var(--radius);
-    border-bottom-right-radius: var(--radius);
 }
 
 .nav {
@@ -142,7 +140,7 @@ ul {
 }
 
 .dropbtn {
-    background-color: var(--background);
+    background-color: #00000000;
     color: var(--content);
     border: none;
     height: 40px;
@@ -336,6 +334,29 @@ hr.footnote {
     color: var(--links);
     opacity: .8;
     height: 2px;
+}
+
+/* Jump buttons */
+
+.jumpbtns {
+    position: fixed;
+    right: 20px;
+    border: none;
+    border-radius: var(--radius);
+    background: var(--borders);
+    stroke: var(--content);
+}
+
+.jumpbtns:hover {
+    stroke: var(--links);
+}
+
+#jumptop {
+    bottom: 60px;
+}
+
+#jumpbottom {
+    bottom: 20px;
 }
 
 /* Footer */

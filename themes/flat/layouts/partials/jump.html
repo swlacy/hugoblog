@@ -1,0 +1,14 @@
+<!-- Modified from https://mdbootstrap.com/snippets/standard/mdbootstrap/2964350 -->
+<button type="button" class="jumpbtns" id="jumptop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+</button>
+<button type="button" class="jumpbtns" id="jumpbottom">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+</button>
+<script>
+    let jmptop=document.getElementById("jumptop"),jmpbot=document.getElementById("jumpbottom");function toTop(){window.scrollTo(0, 0);}function toBot(){window.scrollTo(0, document.body.scrollHeight);}jmptop.addEventListener("click",toTop),jmpbot.addEventListener("click",toBot);
+</script>

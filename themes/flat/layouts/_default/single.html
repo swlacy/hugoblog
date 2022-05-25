@@ -22,5 +22,5 @@
 {{- if not (.Param "hideFootnote") }}
     {{ partial "footnote.html" . }}
 {{- end }}
-
+{{- partial "jump.html" . -}}
 {{ end }}
