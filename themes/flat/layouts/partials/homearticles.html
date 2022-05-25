@@ -2,7 +2,7 @@
     <h2 style="padding-bottom: 12px"><b>New Content</b></h2>
         <center>
 
-        {{- range ( where site.RegularPages "Section" "in" (slice "posts" "documents" "tutorials") | first 3 ) }}
+        {{- range ( where site.RegularPages "Section" "in" (slice "posts" "documents" "notes") | first 3 ) }}
             <div class="cards">
                 <a class="button-inner" style="text-align: left; border: none;" href="{{ .Permalink }}">
                     <h3>{{ .Title }}</h3>

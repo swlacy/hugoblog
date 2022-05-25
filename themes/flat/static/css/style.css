@@ -27,14 +27,14 @@
     --menuwidth: 114px;
     --radius: 6px;
 
-    --shadow: rgba(0,0,0,.1);
+    --shadow: rgba(0,0,0,.06);
     --inlineCode: #cf3161;
 
     --base: #e8e8e8;
     --background: #f0f0f0;
     --content: #181818;
     --borders: #c0c0c0;
-    --links: #e95420;
+    --links: #ec7f25;
 }
 
 .dark-mode {
@@ -135,6 +135,10 @@ ul {
 
 .lightswitch svg {
     color: var(--content);
+}
+
+.lightswitch svg:hover {
+    color: var(--links);
 }
 
 .dropbtn {
@@ -328,6 +332,12 @@ div.toc {
     margin-right: 4px
 }
 
+hr.footnote {
+    color: var(--links);
+    opacity: .8;
+    height: 2px;
+}
+
 /* Footer */
 
 .footer {
@@ -390,11 +400,11 @@ div.toc {
 
 .sepbar {
     margin: auto;
-    height: 1280px;
-    width: 1px;
+    height: 800px;
+    width: 2px;
     left: 50%;
     display: block;
-    background-color: var(--borders)
+    background-color: var(--base);
 }
 
 #second {

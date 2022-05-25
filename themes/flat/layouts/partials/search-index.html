@@ -1,7 +1,7 @@
 <script>
 window.store = {
     // You can specify your blog section only:
-    {{ range where .Site.Pages "Section" "in" (slice "posts" "documents" "tutorials") }}
+    {{ range where .Site.Pages "Section" "in" (slice "posts" "documents" "notes") }}
     // For all pages in your site, use "range .Site.Pages"
     // You can use any unique identifier here
     "{{ .Permalink }}": {
