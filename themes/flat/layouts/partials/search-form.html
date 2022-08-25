@@ -1,11 +1,10 @@
 <!-- CREDIT: https://victoria.dev/blog/add-search-to-hugo-static-sites-with-lunr -->
 
-
-
 <form id="search"
     action='{{ with .GetPage "/search" }}{{.Permalink}}{{end}}' method="get">
+    <h2>Search This Site</h2>
     <p>
-        Search for one or more strings contained in the body of this site, space delineated.
+        Search for one or more case-insensitive strings contained in the body of this site, space delineated.
         <ul>
             <li>Fuzzyness: <code>foo~1</code> will return articles containing "foo" exactly and all permutations of "foo" within a one-char difference (e.g. "foz")</li>
             <li>Wildcards: <code>bar*</code> will return articles containing "bar" and any subsequent character(s)</li>
