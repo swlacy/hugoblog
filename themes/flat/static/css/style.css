@@ -346,19 +346,21 @@ hr.footnote {
     right: 20px;
     border: none;
     border-radius: var(--radius);
-    background: var(--borders);
+    background: var(--links);
     stroke: var(--content);
+    opacity: 50%;
 }
 
 .jumpbtns:hover {
     stroke: var(--links);
+    opacity: 100%;
 }
 
 #jumptop {
     bottom: 60px;
 }
 
-#jumpbottom {
+#mailme {
     bottom: 20px;
 }
 

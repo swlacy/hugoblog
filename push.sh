@@ -1,12 +1,12 @@
-#/opt/homebrew/bin/bash
+#/usr/bin/env bash
  
 read -p "Message: " msg
 
-if [ -z "$msg" ]
-    then msg="Generic file update(s); no commit message provided"
+if [ -z "$msg" ]; then
+    msg="Generic file update(s); no commit message provided"
 fi
 
-hugo && firebase deploy
+rm -rf public/ && hugo && firebase deploy
 
 git add .
 git commit -m "$msg"
