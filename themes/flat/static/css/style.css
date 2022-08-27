@@ -297,6 +297,12 @@ figure img, p img {
     background-color: var(--background);
 }
 
+figcaption {
+    font-size: small;
+    border: solid 1px var(--borders);
+    border-radius: var(--radius);
+}
+
 .button-inner, div.toc {
     display: grid;
     flex-direction: column;
@@ -354,7 +360,7 @@ hr.footnote {
 .jumpbtns:hover {
     stroke: var(--links);
     opacity: 100%;
-    text-decoration: none;
+
 }
 
 #jumptop {
