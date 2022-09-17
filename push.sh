@@ -1,6 +1,10 @@
 #/usr/bin/env bash
- 
-read -p "Message: " msg
+
+if [ $# -gt 0 ]; then
+    msg="'$*'"
+else
+    read -p "Message: " msg
+fi
 
 if [ -z "$msg" ]; then
     msg="Generic file update(s); no commit message provided"
